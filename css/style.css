@@ -6585,10 +6585,75 @@ button.close {
   src: url('../fonts/brandon-fonts/Brandon_reg.eot');
   src: url('../fonts/brandon-fonts/Brandon_reg.eot') format('embedded-opentype'), url('../fonts/brandon-fonts/Brandon_reg.woff2') format('woff2'), url('../fonts/brandon-fonts/Brandon_reg.woff') format('woff'), url('../fonts/brandon-fonts/Brandon_reg.ttf') format('truetype'), url('../fonts/brandon-fonts/Brandon_reg.svg#Brandon_reg') format('svg');
 }
+@font-face {
+  font-family: 'Gotham_bold';
+  src: url('../fonts/gotham-fonts/GOTHMBOL.eot');
+  src: url('../fonts/gotham-fonts/fonts/GOTHMBOL.woff') format('woff'), url('../fonts/gotham-fonts/GOTHMBOL.ttf') format('truetype'), url('../fonts/gotham-fonts/GOTHMBOL.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon/icomoon.eot?5y6iv2');
+  src: url('../fonts/icomoon/icomoon.eot?5y6iv2#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?5y6iv2') format('truetype'), url('../fonts/icomoon/icomoon.woff?5y6iv2') format('woff'), url('../fonts/icomoon/icomoon.svg?5y6iv2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.input-group {
+  width: 200px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.input-group input {
+  margin-top: 10px;
+  margin-right: 25px;
+}
+.input-group input:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.line-20 {
+  border: 1px solid #2e3a5e;
+  width: 20%;
+  margin: auto;
+}
+.line-30 {
+  border: 1px solid #2e3a5e;
+  width: 35%;
+  margin: auto;
+}
+.img-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.71);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+}
+.img-icon:before {
+  content: "\f186";
+  font-family: FontAwesome;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .navbar {
   border: none;
   margin-bottom: 10px;
   font-family: 'brandon_med';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .navbar-default {
   background-color: #ffffff;
@@ -6618,30 +6683,39 @@ button.close {
   background-color: #ffffff;
   /*border-color: #62666e;*/
 }
-.banner {
-  /*background: url('../images/banner1.jpg') no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 703px;*/
-}
 .banner-slider img {
   width: 100%;
   height: 703px;
 }
 .carousel-caption {
-  text-align: none !importan;
+  text-align: left;
   left: 15%;
-  right: 55%;
-  top: 25%;
+  right: 40%;
+  top: 10%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.carousel-caption h1 {
+  font-size: 81px;
+  font-family: 'Gotham_bold';
+}
+.carousel-caption p {
+  font-family: 'Brandon_reg';
+  font-size: 21px;
 }
 .areas-of-practice {
   background-color: #f6f6f6;
   padding-bottom: 100px;
   font-family: 'Brandon_bld';
   color: #2e3a5e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .areas-of-practice .practice {
   overflow: hidden;
+}
+.areas-of-practice .practice .prac-img-holder {
+  position: relative;
 }
 .areas-of-practice .practice .prac-img-holder img {
   width: 100%;
@@ -6661,6 +6735,8 @@ button.close {
 }
 .welcome {
   padding-left: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .welcome .welc-img {
   /*	img {
@@ -6682,6 +6758,9 @@ button.close {
   text-align: justify;
   color: #8f8c8c;
 }
+.welcome .welc-content .button-about {
+  margin-bottom: 50px;
+}
 .welcome button {
   margin-top: 50px;
   padding: 20px 30px;
@@ -6698,6 +6777,8 @@ button.close {
   position: relative;
   padding: 75px 0px;
   font-family: Myriad Pro;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .post-section .latest-news {
   padding: 0px 165px 20px 0px;
@@ -6740,15 +6821,31 @@ button.close {
   padding: 15px;
   width: 45%;
   margin-right: 20px;
+  /*box-shadow: none;*/
 }
-.post-section .request-form form input:active {
+.post-section .request-form form input:focus {
   border: 2px solid #2e3a5e;
+  box-shadow: none;
+}
+.post-section .request-form form textarea {
+  /*border: 2px solid #2e3a5e;*/
+  border-radius: 0px;
+  box-shadow: none !important;
 }
 .post-section .request-form .request-form-details {
   margin-top: 30px;
 }
 .post-section .request-form .request-form-details form {
   margin-top: 20px;
+}
+.post-section .request-form .request-form-details form button {
+  background-color: #2e3a5e;
+  color: #ffffff;
+  border: none;
+  padding: 15px 45px;
+}
+.post-section .request-form .request-form-details form .message {
+  width: 94%;
 }
 .post-section .parent-arrows {
   color: #ffffff;
@@ -6768,6 +6865,8 @@ button.close {
   color: #d9d9d9;
   padding: 80px 20px;
   font-family: 'Brandon_reg';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .footer li {
   list-style-type: none;
@@ -6811,4 +6910,27 @@ button.close {
 }
 .footer .copyright p {
   font-size: 12px;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('/fonts/icomoon/icomoon.eot?5y6iv2');
+  src: url('/fonts/icomoon/icomoon.eot?5y6iv2#iefix') format('embedded-opentype'), url('/fonts/icomoon/icomoon.ttf?5y6iv2') format('truetype'), url('/fonts/icomoon/icomoon.woff?5y6iv2') format('woff'), url('/fonts/icomoon/icomoon.svg?5y6iv2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-injured:before {
+  content: "\e600";
 }

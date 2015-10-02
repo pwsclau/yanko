@@ -8,9 +8,15 @@
 
      <title>Yanko</title>
      <!-- Latest compiled and minified CSS -->
-     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/searchbar/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/searchbar/component.css" />
      <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     
+
+    <script src="js/modernizr.custom.js"></script>
 
   </head>
 
@@ -29,9 +35,24 @@
       </div>
 
       <ul class ="nav navbar-nav navbar-right ">
-         <li><a href="#"><i class="fa fa-search"></i>  Search</a></li>
+          
+        <li class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+        </li>
+          
+
+        
           <li><a href="#">T: 403.262.0262</a></li>
           <li><a href="#">F: 403.204.0284</a></li>
+
+          <!-- <div id="sb-search" class="sb-search">
+            <form>
+              <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+              <input class="sb-search-submit" type="submit" value="">
+              <span class="sb-icon-search"> </span>
+              <p>Search</p>
+            </form>
+          </div> -->
         </ul>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -114,17 +135,19 @@
     <div class="container">
       <div class="heading">
         <h2>AREAS OF PRACTICE</h2>
+        <div class="line-20"></div>
       </div>
 
       <div class="container">
         <div class="row">
-          <div class="gap-50"></div>
 
           <div class="col-md-4 p-10">
             <div class="practice">
               <div class="prac-img-holder">
-                <!-- <img src="images/area1.png"> -->
-                <img src="images/injured.svg">
+                <img src="images/area1.png">
+                <div class="img-icon"></div>
+                <span class="icon-injured"></span>
+                <!-- <img src="images/injured.svg"> -->
               </div>
               <div class="prac-title">
                 <h4>PERSONAL INJURY</h4>
@@ -162,6 +185,7 @@
     <div class="container">
         <div class="heading">
           <h2>WELCOME TO YANKO & POPOVIC - PROVIDING LEGAL HELP</h2>
+          <div class="line-30"></div>
         </div>
         <div class="row">
           <div class="col-md-6">
@@ -181,9 +205,10 @@
 
               </div>
               
-
-             <!--  <div class="gap-20"></div> -->
-              <button>ABOUT US <i class="fa fa-long-arrow-right"></i></button>
+              <div class="button-about">
+                <button>ABOUT US <i class="fa fa-long-arrow-right"></i></button>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -207,6 +232,7 @@
                 <div class="col-md-2">
                   <div class="date">
 
+                    <!-- <img src="images/calendar.png"> -->
                     <img src="images/date.jpg">
                   </div>
                 </div>
@@ -219,14 +245,8 @@
               </div>
 
               <div class="parent-arrows">
-                <!-- <a href="#" class="btn btn-info" role="button"><i class="fa fa-long-arrow-right"></i></a> -->
-
                 <button type="button" class="btn btn-default arrows"><i class="fa fa-long-arrow-left"> </i></button>
                 <button type="button" class="btn btn-default arrows"><i class="fa fa-long-arrow-right"></i></button>
-                
-                <!-- <span class = "arrows">
-                  <i class="fa fa-long-arrow-right"></i>
-                </span> -->
               </div>
               </div>
               
@@ -249,8 +269,9 @@
                   <input type = "text" class = "form-inline" id = "case" placeholder = "Enter the case">
                 </div>
                 <div class="form-group">
-                  <textarea class = "form-control" rows = "5" id = "message" placeholder = "Message"></textarea>
+                  <textarea class = "form-control message" rows = "5" id = "message" placeholder = "Message"></textarea>
                 </div>
+                <button type="submit" class="btn btn-default">Submit</button>
               </form>
               </div>
             </div>
@@ -342,11 +363,12 @@
       </div>
     </div>
 
-   
 
-
-   
-
+    <script src="js/searchbar/classie.js"></script>
+    <script src="js/searchbar/uisearch.js"></script>
+    <script>
+      new UISearch( document.getElementById( 'sb-search' ) );
+    </script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

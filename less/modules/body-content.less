@@ -4,10 +4,15 @@
 	font-family: 'Brandon_bld';
 	color: #2e3a5e;
 
+
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+
 	.practice {
 		overflow: hidden;
 
 		.prac-img-holder {
+			position: relative;
 			img {
 
 				width: 100%;
@@ -36,6 +41,9 @@
 .welcome {
 	padding-left: 20px;
 
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+
 	.welc-img  {
 	/*	img {
 			width: 100%;
@@ -59,6 +67,9 @@
 			text-align: justify;
 			color: #8f8c8c;
 		}
+		.button-about {
+			margin-bottom: 50px;
+		}
 	}
 
 	button {
@@ -79,6 +90,10 @@
 	position: relative;
 	padding: 75px 0px;
 	font-family: Myriad Pro;
+
+
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
 
 	.latest-news {
 		padding: 0px 165px 20px 0px;
@@ -129,16 +144,32 @@
 				padding: 15px;
 				width: 45%;
 				margin-right: 20px;
-				
+				/*box-shadow: none;*/
 			}
-			input:active {
+			input:focus {
 				border: 2px solid #2e3a5e;
+				box-shadow: none;
+			}
+			textarea {
+				/*border: 2px solid #2e3a5e;*/
+				border-radius: 0px;
+				box-shadow: none !important;
 			}
 		}
 		.request-form-details {
 			margin-top: 30px;
 			form {
 				margin-top: 20px;
+
+				button {
+					background-color: #2e3a5e;
+					color: #ffffff;
+					border: none;
+					padding: 15px 45px;
+				}
+				.message {
+				width: 94%;
+				}
 			}
 		}
 	}
@@ -164,6 +195,10 @@
 	color: #d9d9d9;
 	padding: 80px 20px;
 	font-family: 'Brandon_reg';
+
+	
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
 
 	li {
 		list-style-type: none;
