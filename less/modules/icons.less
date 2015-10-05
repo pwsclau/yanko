@@ -1,29 +1,90 @@
-@font-face {
-	font-family: 'icomoon';
-	src:url('/fonts/icomoon/icomoon.eot?5y6iv2');
-	src:url('/fonts/icomoon/icomoon.eot?5y6iv2#iefix') format('embedded-opentype'),
-		url('/fonts/icomoon/icomoon.ttf?5y6iv2') format('truetype'),
-		url('/fonts/icomoon/icomoon.woff?5y6iv2') format('woff'),
-		url('/fonts/icomoon/icomoon.svg?5y6iv2#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+.icon-injured {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	.translate(-50%,-50%);
+	background-color: rgba(0, 0, 0, 0.71);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	color: #fff;
+
+	&:before{
+		content: "\e600";
+		font-family: icomoon;
+		font-size: 85px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		.translate(-50%,-50%);
+	}
 }
 
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+.icon-court {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	.translate(-50%,-50%);
+	background-color: rgba(0, 0, 0, 0.71);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	color: #fff;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	&:before{
+		content: "\e800";
+		font-family: icomoon;
+		font-size: 85px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		.translate(-50%,-50%);
+	}
 }
 
-.icon-injured:before {
-	content: "\e600";
+.icon-family {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	.translate(-50%,-50%);
+	background-color: rgba(0, 0, 0, 0.71);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	color: #fff;
+
+	&:before{
+		content: "\e601";
+		font-family: icomoon;
+		font-size: 85px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		.translate(-50%,-50%);
+	}
+}
+
+.glyphicon-chevron-left {
+	background-color: rgba(0, 0, 0, 0.71);
+	width: 80px!important;
+	height: 80px !important;
+	left: 0 !important;
+	padding: 25px;
+}
+
+.glyphicon-chevron-right {
+	background-color: rgba(0, 0, 0, 0.71);
+	width: 80px !important;
+	height: 80px !important;
+	right: 0 !important;
+	padding: 25px;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+	margin-right: 0px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+	margin-left: 0px;
 }
 

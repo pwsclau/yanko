@@ -6,11 +6,13 @@
 	input {
 		margin-top: 10px;
 		margin-right: 25px;
+
+		&:focus {
+			border-color: none;
+			box-shadow: none;
+		}
 	}
-	input:focus {
-		border-color: none;
-		box-shadow: none;
-	}
+	
 }
 
 .line-20 {
@@ -25,28 +27,23 @@
 	margin: auto;
 }
 
-.img-icon {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	.translate(-50%,-50%);
-	background-color: rgba(0, 0, 0, 0.71);
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	color: #fff;
 
-	&:before{
-		content: "\f186";
-		font-family: FontAwesome;
-		font-size: 30px;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		.translate(-50%,-50%);
-		
-	}
+.gap-25 {
+	height: 25px;
+}
+.gap-30 {
+	height: 30px;
+}
+.ml-10 {
+	margin-left: 10px;
 }
 
+.ml-27 {
+	margin-left: 27px;
+}
+
+.btn-page {
+	font-size: 15px;
+}
 
 
