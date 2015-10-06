@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/searchbar/default.css" />
     <link rel="stylesheet" type="text/css" href="css/searchbar/component.css" />
      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-     <link rel="stylesheet" type="text/css" href="css/hover.css">
+    <link rel="stylesheet" type="text/css" href="css/hover-buttons/hover-min.css">
      <link rel="stylesheet" type="text/css" href="css/style.css">
      
 
@@ -33,25 +33,21 @@
         <a class="navbar-brand" href="#"><img src="images/logo.jpg"></a>
       </div>
 
-      <ul class ="nav navbar-nav navbar-right ">
+      <ul class ="nav navbar-nav navbar-right upper-nav">
           
-        <li class="input-group">
-          <input type="text" class="form-control searchicon" placeholder="Search for... ">
-        </li>
-          
+        <form role="search" method="get" class="search-form" >
+          <label>
+            <input type="search" 
+                  class="search-field" 
+                  placeholder="Search"  
+                  value="" name="s" 
+                  title="Search efter:">
+          </label>
+          <input type="submit" class="search-submit" value="Search">
+        </form>
 
-        
           <li><a href="#">T: 403.262.0262</a></li>
           <li><a href="#">F: 403.204.0284</a></li>
-
-          <!-- <div id="sb-search" class="sb-search">
-            <form>
-              <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
-              <input class="sb-search-submit" type="submit" value="">
-              <span class="sb-icon-search"> </span>
-              <p>Search</p>
-            </form>
-          </div> -->
         </ul>
 
       <!-- Collect the nav links, forms, and other content for toggling -->

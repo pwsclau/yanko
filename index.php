@@ -7,8 +7,6 @@
         <ol class="carousel-indicators">
           <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
           <li data-target="#banner-carousel" data-slide-to="1"></li>
-          <li data-target="#banner-carousel" data-slide-to="2"></li>
-          <li data-target="#banner-carousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -20,7 +18,8 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 
               <div class="gap-30"></div>
-            <button>LEARN MORE <i class="fa fa-long-arrow-right"></i></button>
+              <button class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></button>
+            
             </div>
           </div>
           <div class="item">
@@ -30,7 +29,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 
               <div class="gap-30"></div>
-              <button>LEARN MORE <i class="fa fa-long-arrow-right"></i></button>
+              <button class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></button>
             </div>
           </div>
           
@@ -50,28 +49,6 @@
 
 
    <div class="areas-of-practice">
-       <!-- <div class="grid">
-          <figure class="effect-julia">
-            <img src="images/area2.png" alt="img22"/>
-            <figcaption>
-              <h2>Passionate <span>Julia</span></h2>
-              <div>
-                <p>Julia dances in the deep dark</p>
-              </div>
-              <a href="#">View more</a>
-            </figcaption>     
-          </figure>
-          <figure class="effect-julia">
-            <img src="images/area2.png" alt="img22"/>
-            <figcaption>
-              <h2>Passionate <span>Julia</span></h2>
-              <div>
-                <p>Julia dances in the deep dark</p>
-              </div>
-              <a href="#">View more</a>
-            </figcaption>     
-          </figure>
-        </div> -->
 
       <div class="areas-of-practice">
         <div class="container">
