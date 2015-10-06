@@ -10,35 +10,68 @@
 
 	.practice {
 		overflow: hidden;
+		height: 370px;
 
 		.prac-img-holder {
 			position: relative;
-			img {
+			/*img {
 				width: 100%;
 				max-height: 300px;
 				height: 100%;
-			}
+			}*/
 		}
 
+/*		.prac-title {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			text-align: center;
+			font-weight: bold;
+			width: 100%;
+			height: 100%;
+			display: table;
+
+			h4 {
+				display: table-cell;
+		    vertical-align: middle;
+		    position: relative;
+		    top: 20px;
+		    opacity: 0;
+		    color: #2c3e50;
+		    text-transform: uppercase;
+			}
+		}
+*/
 		.injury-img {
 			background: url('../images/area1.png') no-repeat;
 			background-size: cover;
 			width: 100%;
-			height: 300px;
+			height: 100%;
+/*
+			 -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  		-webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);*/
+
+
 		}
 
 		.criminal-img {
 			background: url('../images/area2.png') no-repeat;
 			background-size: cover;
 			width: 100%;
-			height: 300px;
+			/*height: 300px;*/
+			height: 100%;
 		}
 
 		.family-img {
 			background: url('../images/area3.png') no-repeat;
 			background-size: cover;
 			width: 100%;
-			height: 300px;
+			/*height: 300px;*/
+			height: 100%;
 		}
 
 		.prac-title {
@@ -256,9 +289,7 @@
 	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;
 
-	li {
-		list-style-type: none;
-	}
+	
 	ul, span {
 		line-height: 35px;
 	}
@@ -309,4 +340,187 @@
 		}
 	}
 }
+
+.practice-info {
+	padding: 10em 0px;
+	line-height: 33px;
+	font-family: 'Brandon_reg';
+
+	h3 {
+		font-family: 'Brandon_bld';
+	}
+	h4 {
+		margin-top: 30px;
+	}
+	p, li {
+		color: #696666;
+	}
+
+	.practice-info-title {
+		margin-bottom: 50px;
+		color: #2e3a5e;
+	}
+
+	.right {
+		margin-left: 40px;
+	}
+
+	.lawyers-list {
+		
+	}
+}
+
+.meet-the-team {
+	font-family: 'Brandon_reg';
+	padding: 3em 0px;
+
+
+	.meet-the-team-desc {
+		/*padding: 30px 0px;*/
+		h3 {
+			font-family: 'Brandon_bld';
+			color: #2e3a5e;
+			text-align: center;
+		}
+		p {
+			padding: 2em 10em;
+			line-height: 30px;
+			text-align: center;
+			color: #404244;
+		}
+
+	}
+
+	.lawyer-holder {
+		background-color: #404244;
+		overflow: hidden;
+		margin-bottom: 4em;
+
+		.lawyer-det-holder {
+			margin: 20px; 
+			h3, h4 {
+				color: #ffffff;
+			}
+			p {
+				color: #9c9c9c;
+			}
+		}
+
+		.lawyer-det-holder {
+			.btn-default {
+				background-color: #a4aabc;
+				color: #ffffff;
+			}
+		}
+
+		.laywer-img-holder img {
+			width: 100%;
+		}
+	}
+}
+
+.vision-mission-content, .history-content, .cu-inner-content {
+	padding: 5em 0em;
+}
+
+
+.inner-content {
+	margin: 0px 3em 5em 3em;
+/*	margin-bottom: 8em;*/
+	h3 {
+		font-family: 'Brandon_bld';
+		color: #2e3a5e;
+		text-align: center;
+	}
+	p {
+		text-align: center;
+		line-height: 30px;
+		margin-top: 30px;
+		color: #696666;
+		font-family: 'Brandon_reg';
+		font-size: 18px;
+	}
+}
+
+.history-inner-content {
+	margin-top: 10em;
+	h3 {
+		text-align: left;
+	}
+	p {
+		text-align: left;
+		margin-right: 20px;
+	}
+}
+
+.cu-inner-content {
+	p, h3 {
+		text-align: left;
+	}
+
+	.cu-form {
+		margin-top: 20px;
+
+		form {
+			font-family: 'Brandon_bld';
+
+			input {
+				padding: 15px;
+				width: 45%;
+				margin-right: 20px;
+				/*box-shadow: none;*/
+			}
+			input:focus {
+				border: 2px solid #2e3a5e;
+				box-shadow: none;
+			}
+			textarea {
+				/*border: 2px solid #2e3a5e;*/
+				border-radius: 0px;
+				box-shadow: none !important;
+				width: 93.5%;
+			}
+			button {
+					background-color: #2e3a5e;
+					color: #ffffff;
+					border: none;
+					padding: 15px 45px;
+					margin-top: 40px;
+				}
+		}
+
+	}
+}
+
+.location-map {
+		img {
+		width: 100%;
+		height: 445px;
+	}
+}
+
+.cu-info {
+	line-height: 33px;
+	font-family: 'Brandon_reg';
+
+	h3 {
+		font-family: 'Brandon_bld';
+	}
+	p, li {
+		color: #696666;
+		font-size: 18px;
+	}
+
+	.cu-info-title {
+		margin-bottom: 30px;
+		color: #2e3a5e;
+	}
+	.cu-list {
+		li {
+			line-height: 30px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
 

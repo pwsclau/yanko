@@ -30,7 +30,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="images/logo.jpg"></a>
+        <a class="navbar-brand" href="index.php"><img src="images/logo.jpg"></a>
       </div>
 
       <ul class ="nav navbar-nav navbar-right upper-nav">
@@ -56,29 +56,24 @@
 
         <ul class="nav navbar-nav navbar-right ">
 
-          <li><a href="#">HOME</a></li>
+          <li><a href="index.php">HOME</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT US<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="history.php">HISTORY</a></li>
+              <li><a href="vision_mission.php">VISION & MISSION</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AREAS OF PRACTICE<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="area_of_practice.php">PERSONAL INJURY</a></li>
+              <li><a href="area_of_practice.php">CRIMINAL LAW</a></li>
+              <li><a href="area_of_practice.php">FAMILY LAW</a></li>
             </ul>
           </li>
-          <li><a href="#">LAWYERS</a></li>
-          <li><a href="#" class="btn btn-info" role="button">CONTACT US <i class="fa fa-long-arrow-right"></i></a></li>
+          <li><a href="client_lawyers.php">LAWYERS</a></li>
+          <li><a href="contact-us.php" class="btn btn-info" role="button">CONTACT US <i class="fa fa-long-arrow-right"></i></a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
