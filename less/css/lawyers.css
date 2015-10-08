@@ -1,0 +1,36 @@
+.section-team .section-desc p {
+  text-align: center;
+  padding: 0px 5em;
+}
+.section-team .lawyer-holder {
+  background-color: #404244;
+  overflow: hidden;
+  margin-top: 4em;
+}
+.section-team .lawyer-holder .details-lawyer {
+  margin: 20px;
+}
+.section-team .lawyer-holder h3,
+.section-team .lawyer-holder h4 {
+  color: #ffffff;
+}
+.section-team .lawyer-holder p {
+  color: #9c9c9c;
+}
+.section-team .lawyer-holder img {
+  width: 100%;
+}
+.section-team .lawyer-holder .btn-default {
+  background-color: #a4aabc;
+  color: #ffffff;
+  padding: 10px 30px;
+}
+.section-history {
+  margin-bottom: 7em;
+}
+.history-content {
+  margin: 0px 5em;
+}
+.history-content-holder {
+  margin-top: 8em;
+}

@@ -61,18 +61,18 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT US<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="history.php">HISTORY</a></li>
-              <li><a href="vision-mission.php">VISION & MISSION</a></li>
+              <li><a href="vision_mission.php">VISION & MISSION</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AREAS OF PRACTICE<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="area-of-practice.php">PERSONAL INJURY</a></li>
-              <li><a href="area-of-practice.php">CRIMINAL LAW</a></li>
-              <li><a href="area-of-practice.php">FAMILY LAW</a></li>
+              <li><a href="area_of_practice.php">PERSONAL INJURY</a></li>
+              <li><a href="area_of_practice.php">CRIMINAL LAW</a></li>
+              <li><a href="area_of_practice.php">FAMILY LAW</a></li>
             </ul>
           </li>
-          <li><a href="lawyers.php">LAWYERS</a></li>
+          <li><a href="client_lawyers.php">LAWYERS</a></li>
           <li><a href="contact-us.php" class="btn btn-info" role="button">CONTACT US <i class="fa fa-long-arrow-right"></i></a></li>
         </ul>
       </div><!-- /.navbar-collapse -->

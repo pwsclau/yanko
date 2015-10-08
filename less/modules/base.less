@@ -1,83 +1,107 @@
-.input-group {
-	width: 200px;
-	-webkit-font-smoothing: antialiased;
- 	-moz-osx-font-smoothing: grayscale;
+@darkblue: #2e3a5e;
+@bran_bold: 'Brandon_bld';
 
-	input {
-		margin-top: 10px;
-		margin-right: 25px;
+@gray: #696666;
+@white: #ffffff;
+@bran_reg: 'Brandon_reg';
+@desc-color: #696666;
 
-		&:focus {
-			border-color: none;
-			box-shadow: none;
-		}
-	}
-	
-}
+@goth_bold: 'Gotham_bold';
 
+@btn-color: @darkblue;
 
-.line-14 {
-	width: 14%;
-	border: 1px solid #2e3a5e;
-
-}
-.line-13 {
-	width: 13%;
-	border: 1px solid #2e3a5e;
-	margin: auto;
-}
-.line-20 {
-	border: 1px solid #2e3a5e;
-	width: 20%;
-	margin: auto;
-
-}
-.line-30 {
-	border: 1px solid #2e3a5e;
-	width: 35%;
-	margin: auto;
-}
-
-.line-25 {
-	border: 1px solid #2e3a5e;
-	width: 25%;
-}
-
-.line-70 {
-	border: 1px solid #2e3a5e;
-	width: 70%;
-}
-
-.line-125 {
-	width: 125px;
-	border: 1px solid #2e3a5e;
+ul {
+	padding-left: 0px;
 }
 
 li {
+	font-family: @bran_reg;
+	margin-bottom: 10px;
+}
+ul li {
 	list-style-type: none;
 }
-
-
-.gap-25 {
-	height: 25px;
-}
-.gap-30 {
-	height: 30px;
-}
-.ml-10 {
-	margin-left: 10px;
+.line-center {
+	border: 1px solid @darkblue;
+	margin: auto;
 }
 
-.ml-27 {
-	margin-left: 27px;
+.cline-15 {
+	.line-center();
+	width: 15em;
+}
+.cline-50 {
+	.line-center();
+	width: 50em;
+}
+.line-20 {
+	border: 1px solid @darkblue;
+	width: 20em; 
 }
 
-.btn-page {
-	font-size: 15px;
+.sm-links {
+	background-color: #d9d9d9;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 50%;
+	color: #404244;
 }
 
-h3, h4 {
-	text-transform: capitalize;
+.sm-list {
+	display: table;
+	margin: auto;
+
+	li {
+		float: left;
+	}
 }
 
+h1, h2 {
+	text-transform: uppercase;
+}
 
+h2 {
+	color: @darkblue;
+	font-family: @bran_bold;
+	font-size: 32px;
+}
+
+h3 {
+	color: @gray;
+	font-family: @bran_bold;
+}
+
+h4 {
+	color: @gray;
+	font-family: @bran_bold;
+	font-size: 20px;
+}
+
+p {
+	color: @desc-color;
+	font-family: @bran_reg;
+	font-size: 20px;
+}
+
+.p-0 {
+	padding: 0px;
+}
+
+.m-2 {
+	margin-left: 15%;
+}
+
+.right-padd-10 {
+	padding-right: 10em;
+}
+
+.left-padd-5 {
+	padding-left: 5em;
+}
+.m-t-1em {
+	margin-top: 1em
+}
