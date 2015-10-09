@@ -1,7 +1,7 @@
 <?php include ('header.php'); ?>
 
-	<div class="subpage-banner">
-		<img src="images/subpg-banner.jpg">
+	<div class="subpage-banner practice-subpg">
+		<!-- <img src="images/subpg-banner.jpg"> -->
 		<h1 class="heading-46">PERSONAL INJURY</h1>
 	</div>
 
@@ -11,6 +11,7 @@
 				<div class="col-md-8">
 					<div class="section-title">
 						<h2>Injury Claims are actions in tort.</h2>
+						<div class="line-16"></div>
 					</div>
 					<div class="section-desc">
 						<p>
@@ -33,13 +34,14 @@
 				<div class="col-md-4">
 					<div class="section-title">
 						<h4>Practising Lawyers</h4>
+						<div class="line-16-less"></div>
 					</div>
 					<ul>
-						<li>David Yanko</li>
-						<li>Brad Popovic</li>
-						<li>Helmut Ehms</li>
-						<li>Herman Sidhu</li>
-						<li>James Uniacke</li>
+						<li><span class="icon-justice" style ="color: #000"></span> David Yanko</li>
+						<li><span class="icon-justice"></span> Brad Popovic</li>
+						<li><span class="icon-justice"></span> Helmut Ehms</li>
+						<li><span class="icon-justice"></span> Herman Sidhu</li>
+						<li><span class="icon-justice"></span> James Uniacke</li>
 					</ul>
 				</div>
 			</div>

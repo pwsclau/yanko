@@ -20,7 +20,9 @@
                 <p class= "carousel-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 
 
-                <button class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></button>
+                <!-- <a href = "lawyers.php"class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></a> -->
+
+                <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
               </div>
           </div>
           <div class="col-md-6">
@@ -39,7 +41,10 @@
               <div class="carousel-caption">
                 <h1 class= "carousel-title">Need Legal Assistance?</h1>
                 <p class= "carousel-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                <button class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></button>
+
+                <!-- <a href ="lawyers.php"class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></a> -->
+
+                <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
               </div>
           </div>
           <div class="col-md-6">
@@ -67,9 +72,6 @@
   
 </div>
 	
-  
-	
-
    <div class="section section-areas">
    	<div class="container">
    		<div class="section-title">
@@ -79,29 +81,31 @@
 
    		<div class="section-content">
    			<div class="row">
-   				<div class="col-md-4">
-
-   					<div class="hovereffect">
+   				<div class="col-xs-8 col-sm-4 col-md-4">
+   					<div class="hovereffect image-holder-prac">
               <img src="images/area1.png" class="img-responsive">
+              <a href="area-of-practice.php"><div class="icon-injured"></div></a>
               <div class="overlay">
-                <h4> <a href="area-of-practice.php">PERSONAL INJURY</a> </h4>
+                <h4>PERSONAL INJURY</h4>
               </div>
             </div>
 
    				</div>
-   				<div class="col-md-4">
-   					<div class="hovereffect">
-              <img src="images/area1.png" class="img-responsive">
+   				<div class="col-xs-8 col-sm-4 col-md-4">
+   					<div class="hovereffect image-holder-prac">
+              <img src="images/area2.png" class="img-responsive">
+              <a href="area-of-practice.php"><div class="icon-court"></div></a>
               <div class="overlay">
-                <h4> <a href="area-of-practice.php">PERSONAL INJURY</a> </h4>
+                <h4>CRIMINAL LAW</h4>
               </div>
             </div>
    				</div>
-   				<div class="col-md-4">
-   					<div class="hovereffect">
-              <img src="images/area1.png" class="img-responsive">
+   				<div class="col-xs-8 col-sm-4 col-md-4">
+   					<div class="hovereffect image-holder-prac">
+              <img src="images/area3.png" class="img-responsive">
+              <a href="area-of-practice.php"><div class="icon-family"></div></a>
               <div class="overlay">
-                <h4> <a href="area-of-practice.php">PERSONAL INJURY</a> </h4>
+                <h4> FAMILY LAW</h4>
               </div>
             </div>
    				</div>

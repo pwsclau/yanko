@@ -6575,6 +6575,7 @@ button.close {
   background-size: cover;
   width: 100%;
   position: relative;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -6612,6 +6613,20 @@ button.close {
 .banner .carousel-indicators {
   margin-left: -35%;
   text-align: left;
+}
+.banner .btn {
+  border: 2px solid #62666e;
+}
+.banner .btn:hover {
+  border-color: #62666e;
+}
+.banner .btn-info {
+  margin-top: 3em;
+  background: none;
+  border-color: #ffffff;
+  font-family: 'Brandon_bld';
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 /*.carousel-control {
 	width: 5%;
@@ -6654,8 +6669,6 @@ button.close {
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.subpage-banner img {
   width: 100%;
   height: 275px;
 }
@@ -6668,6 +6681,41 @@ button.close {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #ffffff;
+}
+.subpg-bg {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0;
+}
+.practice-subpg {
+  background: url('../images/subpg-banner.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0;
+}
+.lawyers-subpg {
+  background: url('../images/subpg-banner-lawyers.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0;
+}
+.vm-subpg {
+  background: url('../images/subpg-banner-vm.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0;
+}
+.cu-subpg {
+  background: url('../images/subpg-banner-cu.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0;
+}
+.history-subpg {
+  background: url('../images/subpg-banner-vm.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0;
 }
 ul {
   padding-left: 0px;
@@ -6692,6 +6740,14 @@ ul li {
   border: 1px solid #2e3a5e;
   margin: auto;
   width: 50em;
+}
+.line-16-less {
+  border-bottom: 1px solid #2e3a5e;
+  width: 16em;
+}
+.line-16 {
+  border: 1px solid #2e3a5e;
+  width: 16em;
 }
 .line-20 {
   border: 1px solid #2e3a5e;
@@ -6939,6 +6995,116 @@ form .btn {
   font-family: 'Brandon_reg';
   font-size: 46px;
 }
+.icon-injured {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.71);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.icon-injured:before {
+  content: "\e600";
+  font-family: icomoon;
+  font-size: 85px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.icon-court {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.71);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.icon-court:before {
+  content: "\e800";
+  font-family: icomoon;
+  font-size: 85px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.icon-family {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.71);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.icon-family:before {
+  content: "\e601";
+  font-family: icomoon;
+  font-size: 85px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.icon-justice {
+  color: #2e3a5e;
+}
+.icon-justice:before {
+  content: "\e801";
+  font-family: icomoon;
+}
+.glyphicon-chevron-left {
+  background-color: rgba(0, 0, 0, 0.71);
+  width: 80px!important;
+  height: 80px !important;
+  left: 0 !important;
+  padding: 25px;
+}
+.glyphicon-chevron-right {
+  background-color: rgba(0, 0, 0, 0.71);
+  width: 80px !important;
+  height: 80px !important;
+  right: 0 !important;
+  padding: 25px;
+}
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+  margin-right: 0px;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+  margin-left: 0px;
+}
 .hovereffect {
   width: 100%;
   max-height: 320px;
@@ -7141,6 +7307,7 @@ button.close {
 .section-post {
   background: url('../images/post-sec-bg.jpg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   position: relative;
   padding-bottom: 7em !important;
@@ -7181,18 +7348,25 @@ button.close {
   padding: 15px 25px;
 }
 .section {
-  padding: 5em 0 0 0;
+  padding: 8em 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.image-holder-prac {
+  margin-top: 2em;
+  max-height: 320px;
+}
+.image-holder-prac img {
+  width: 100%;
 }
 .section-title {
   text-align: center;
 }
 .section-content {
-  margin: 5em 0;
+  margin-top: 3em;
 }
-.section-welcome .section-content {
-  margin-bottom: 0;
+.section-welcome {
+  padding-bottom: 0;
 }
 .section-welcome .sec-image-holder {
   max-width: 580px;
@@ -7214,13 +7388,18 @@ button.close {
 }
 .section-areas {
   background-color: #f6f6f6;
-  padding-bottom: 5em;
 }
-.section-practice .section-title h2 {
+.section-practice {
+  padding: 8em 0;
+}
+.section-practice h2,
+.section-practice h4 {
   text-align: left;
+}
+.section-practice h2 {
   font-size: 32px;
 }
-.section-practice .section-title h4 {
+.section-practice h4 {
   text-transform: uppercase;
   font-family: 'Brandon_reg';
   color: #2e3a5e;
@@ -7234,9 +7413,15 @@ button.close {
   font-size: 18px;
   line-height: 28px;
 }
+.section-practice ul {
+  margin-top: 2em;
+}
 .section-practice li {
   font-size: 17px;
   color: #696666;
+}
+.section-team {
+  padding: 8em 0;
 }
 .section-team .section-desc p {
   text-align: center;
@@ -7266,7 +7451,8 @@ button.close {
   padding: 10px 30px;
 }
 .section-history {
-  margin-bottom: 7em;
+  padding: 8em 0;
+  /*	margin-bottom: 7em;*/
 }
 .history-content {
   margin: 0px 5em;
@@ -7275,7 +7461,7 @@ button.close {
   margin-top: 8em;
 }
 .section-holder {
-  padding: 3em 1em 0em 1em;
+  padding: 0em 1em 0em 1em;
 }
 .section-holder p {
   padding-top: 20px;

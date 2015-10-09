@@ -1,6 +1,5 @@
 <?php include ('header.php'); ?>
-	<div class="subpage-banner">
-		<img src="images/subpg-banner-vm.jpg">
+	<div class="subpage-banner history-subpg">
 		<h1 class = "heading-46">OUR HISTORY</h1>
 	</div>
 

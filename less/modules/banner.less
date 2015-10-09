@@ -3,7 +3,7 @@
 	background-size: cover;
 	width: 100%;
 	position: relative;
-
+	background-attachment: fixed;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -50,6 +50,23 @@
 	.carousel-indicators {
 		margin-left: -35%;
 		text-align: left;
+	}
+
+	.btn {
+		border: 2px solid #62666e;
+	}
+
+	.btn:hover{
+		border-color: #62666e;
+	}
+
+	.btn-info {
+		margin-top: 3em;
+		background: none;
+		border-color: @white;
+		font-family: @bran_bold;
+		letter-spacing: 1px;
+		font-size: 15px;
 	}
 }
 
@@ -103,11 +120,8 @@
 	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;
 
-	img {
-		width: 100%;
-		height: 275px;
-		
-	}
+	width: 100%;
+	height: 275px;
 
 	h1 {
 		position: absolute;
@@ -117,6 +131,37 @@
 
 		color: #ffffff;
 	}
+}
+
+.subpg-bg {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 0;
+}
+
+.practice-subpg {
+	background: url('../images/subpg-banner.jpg') no-repeat;
+	.subpg-bg();
+}
+
+.lawyers-subpg {
+	background: url('../images/subpg-banner-lawyers.jpg') no-repeat;
+	.subpg-bg();
+}
+
+.vm-subpg {
+	background: url('../images/subpg-banner-vm.jpg') no-repeat;
+	.subpg-bg();
+}
+
+.cu-subpg {
+	background: url('../images/subpg-banner-cu.jpg') no-repeat;
+	.subpg-bg();
+}
+
+.history-subpg {
+	background: url('../images/subpg-banner-vm.jpg') no-repeat;
+	.subpg-bg();
 }
 
 

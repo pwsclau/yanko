@@ -8,8 +8,6 @@
 
      <title>Yanko</title>
      <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" type="text/css" href="css/searchbar/default.css" />
-    <link rel="stylesheet" type="text/css" href="css/searchbar/component.css" />
      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/hover-buttons/hover-min.css">
      <link rel="stylesheet" type="text/css" href="css/style.css">

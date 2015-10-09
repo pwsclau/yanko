@@ -1,6 +1,5 @@
 <?php include ('header.php'); ?>
-	<div class="subpage-banner">
-		<img src="images/subpg-banner-cu.jpg">
+	<div class="subpage-banner cu-subpg">
 		<h1 class = "heading-46">CONTACT US</h1>
 	</div>
 

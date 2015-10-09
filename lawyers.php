@@ -1,6 +1,6 @@
 <?php include ('header.php'); ?>
-	<div class="subpage-banner">
-		<img src="images/subpg-banner-lawyers.jpg">
+	<div class="subpage-banner lawyers-subpg">
+		<!-- <img src="images/subpg-banner-lawyers.jpg"> -->
 		<h1 class ="heading-46">OUR ATTORNEYS</h1>
 	</div>
 
