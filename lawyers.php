@@ -27,7 +27,7 @@
 								</div>
 							</div>
 							<div class="col-md-5">
-								<div class="img-lawyer">
+								<div class="img-lawyer-holder">
 									<img src="images/att1.jpg">
 								</div>
 							</div>
@@ -47,7 +47,7 @@
 								</div>
 							</div>
 							<div class="col-md-5">
-								<div class="img-lawyer">
+								<div class="img-lawyer-holder">
 									<img src="images/att1.jpg">
 								</div>
 							</div>
@@ -67,7 +67,7 @@
 								</div>
 							</div>
 							<div class="col-md-5">
-								<div class="img-lawyer">
+								<div class="img-lawyer-holder">
 									<img src="images/att1.jpg">
 								</div>
 							</div>

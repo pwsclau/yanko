@@ -23,19 +23,37 @@
 					</div>
 					<div class="col-md-4 para-16" >
 						<h2 class="section-title left">Contact Info</h2>
+						<div class="line-20"></div>
 						<ul>
-							<li><i class="fa fa-map-marker"></i>Suite 301, 300 Manning Road N.E., <br>
+							<li>
+								<i class="fa fa-map-marker"></i>
+								<span>
+									Suite 301, 300 Manning Road N.E., <br>
 									Calgary, Alberta <br>
 									T2E 8K4
+								</span>
 							</li>
-							<li><i class="fa fa-envelope-o"></i>yanko&popovic@yplaw.ca</li>
-							<li><i class="fa fa-phone"></i>403.262.0262<br>
+							<li>
+								<i class="fa fa-envelope-o"></i>
+								<span>
+									yanko&popovic@yplaw.ca
+								</span>
+							</li>
+							<li>
+								<i class="fa fa-phone"></i>
+								<span>
+									403.262.0262<br>
 									403.204.0284
+								</span>
 							</li>
 						</ul>
 					</div>
 				</div>
 		</div>
+	</div>
+
+	<div class="location-map" id="googleMap">
+		
 	</div>
 
 <?php include ('footer.php'); ?>

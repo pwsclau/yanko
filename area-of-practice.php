@@ -2,7 +2,7 @@
 
 	<div class="subpage-banner practice-subpg">
 		<!-- <img src="images/subpg-banner.jpg"> -->
-		<h1 class="heading-46">PERSONAL INJURY</h1>
+		<h1 class="heading-46 ">PERSONAL INJURY</h1>
 	</div>
 
 	<div class="section section-practice">
@@ -34,10 +34,10 @@
 				<div class="col-md-4">
 					<div class="section-title">
 						<h4>Practising Lawyers</h4>
-						<div class="line-16-less"></div>
+						<div class="line-16-left"></div>
 					</div>
 					<ul>
-						<li><span class="icon-justice" style ="color: #000"></span> David Yanko</li>
+						<li><span class="icon-justice"></span> David Yanko</li>
 						<li><span class="icon-justice"></span> Brad Popovic</li>
 						<li><span class="icon-justice"></span> Helmut Ehms</li>
 						<li><span class="icon-justice"></span> Herman Sidhu</li>
@@ -45,10 +45,7 @@
 					</ul>
 				</div>
 			</div>
-			
-
 		</div>
-		
 	</div>
 
 <?php include ('post-section.php'); ?>

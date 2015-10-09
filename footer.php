@@ -87,7 +87,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
             <div class="modal-img">
-              
+              <img src="images/david4.png" alt="">
             </div>
             <h2 class="modal-title" id="lawyer-modal-label">David G. Yanko</h2>
             <h4>(Founder & Managing Partner)</h4>
@@ -118,6 +118,7 @@
             </p>
             
             <h4 class="modal-subtitle">Assistants To Mr. Yanko</h4>
+            <div class="line-16-left"></div>
             <ul>
               <li>Bridget Jacobs</li>
               <li>San Kwok</li>
@@ -139,10 +140,10 @@
     <script type="text/javascript">
       var divs = $('.heading-46');
         $(window).scroll(function(){
-           if($(window).scrollTop()<200){
-                 divs.stop(true,true).fadeIn('slow');
+           if($(window).scrollTop()<100){
+                 divs.stop(true,true).fadeIn(1500);
            } else {
-                 divs.stop(true,true).fadeOut('slow');
+                 divs.stop(true,true).fadeOut(1500);
            }
         });
     </script>

@@ -16,18 +16,22 @@
           <div class="container p-0 m-2">
             <div class="col-md-6">
               <div class="carousel-caption">
-                <h1 class= "carousel-title">Need Legal Assistance?</h1>
-                <p class= "carousel-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <h1 class= "carousel-title animated pulse">Need Legal Assistance?</h1>
+
+                <div class="banner-content animated slideInLeft">
+                  <p class= "carousel-desc ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 
 
                 <!-- <a href = "lawyers.php"class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></a> -->
 
                 <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                
               </div>
           </div>
           <div class="col-md-6">
             <div class="image-holder">
-              <img class="carousel-img" src="images/attorney.png" alt="">
+              <img class="carousel-img animated slideInRight" src="images/attorney.png" alt="">
             </div>
             
           </div>
@@ -39,17 +43,20 @@
           <div class="container p-0 m-2">
             <div class="col-md-6">
               <div class="carousel-caption">
-                <h1 class= "carousel-title">Need Legal Assistance?</h1>
-                <p class= "carousel-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <h1 class= "carousel-title animated pulse">Need Legal Assistance?</h1>
+                <div class="banner-content animated slideInLeft">
+                  <p class= "carousel-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 
                 <!-- <a href ="lawyers.php"class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></a> -->
 
                 <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+                
               </div>
           </div>
           <div class="col-md-6">
             <div class="image-holder">
-              <img class="carousel-img" src="images/attorney.png" alt="">
+              <img class="carousel-img animated slideInRight" src="images/attorney.png" alt="">
             </div>
             
           </div>
