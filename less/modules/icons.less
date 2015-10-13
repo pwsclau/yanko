@@ -1,4 +1,4 @@
-.icon-injured {
+.icon-bg {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -9,93 +9,92 @@
 	border-radius: 50%;
 	color: #fff;
 	cursor: pointer;
+}
+.icon-att {
+	font-family: icomoon;
+	font-size: 85px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	.translate(-50%,-50%);
+}
+
+.icon-injured {
+	/*.icon-bg();*/
 
 	&:before{
 		content: "\e600";
-		font-family: icomoon;
-		font-size: 85px;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		.translate(-50%,-50%);
+		.icon-att();
 	}
 }
-
 .icon-court {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	.translate(-50%,-50%);
-	background-color: rgba(0, 0, 0, 0.71);
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	color: #fff;
-	cursor: pointer;
+	/*.icon-bg();*/
 
 	&:before{
 		content: "\e800";
-		font-family: icomoon;
-		font-size: 85px;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		.translate(-50%,-50%);
+		.icon-att();
 	}
 }
-
 .icon-family {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	.translate(-50%,-50%);
-	background-color: rgba(0, 0, 0, 0.71);
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	color: #fff;
-	cursor: pointer;
+	/*.icon-bg();*/
 
 	&:before{
 		content: "\e601";
-		font-family: icomoon;
-		font-size: 85px;
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		.translate(-50%,-50%);
+		.icon-att();
 	}
 }
-
-.icon-justice {
-	color: @darkblue;
-
-	&:before {
-		content: "\e801";
-		font-family: icomoon;
-	}
-}
-.glyphicon-chevron-left {
+/*.glyphicon-att {
 	background-color: rgba(0, 0, 0, 0.71);
 	width: 80px!important;
 	height: 80px !important;
+	padding: 25px;
+}
+.glyphicon-chevron-left {
+	.glyphicon-att();
 	left: 0 !important;
-	padding: 25px;
 }
-
 .glyphicon-chevron-right {
-	background-color: rgba(0, 0, 0, 0.71);
-	width: 80px !important;
-	height: 80px !important;
+	.glyphicon-att();
 	right: 0 !important;
-	padding: 25px;
 }
-
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
 	margin-right: 0px;
 }
-
 .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
 	margin-left: 0px;
+}*/
+
+
+.icon-banner {
+	font-family: 'icomoon';
+	-webkit-font-smoothing: antialiased;
 }
+
+.icon-banner-att {
+	background-color: rgba(0, 0, 0, 0.71);
+	height: 60px !important;
+	width: 60px !important;
+	padding: 20px;
+
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	display: inline-block;
+}
+.icon-right-arrow {
+	.icon-banner-att();
+	right: 0 !important;
+	&:before {
+		content: "\e805";
+	}
+}
+
+.icon-left-arrow {
+	.icon-banner-att();
+	left: 0 !important;
+	&:before {
+		content: "\e804";
+	}
+}
+
 

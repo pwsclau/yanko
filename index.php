@@ -1,6 +1,6 @@
 <?php include ('header.php'); ?>
 
-  <div id="banner-carousel" class="carousel slide" data-ride="carousel">
+  <div id="banner-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
 
   <div class="banner banner-slider">
@@ -47,8 +47,6 @@
                 <div class="banner-content animated slideInLeft">
                   <p class= "carousel-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 
-                <!-- <a href ="lawyers.php"class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></a> -->
-
                 <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
                 </div>
                 
@@ -67,11 +65,11 @@
 
     <!-- Controls -->
     <a class="left carousel-control" href="#banner-carousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="icon-banner icon-left-arrow"></span>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#banner-carousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="icon-banner icon-right-arrow"></span>
       <span class="sr-only">Next</span>
     </a>
     </div>
@@ -86,31 +84,31 @@
 				<div class="cline-15"></div>
    		</div>
 
-   		<div class="section-content">
+   		<div class="section-content ">
    			<div class="row">
-   				<div class="col-xs-8 col-sm-4 col-md-4">
+   				<div class="col-xs-12 col-sm-4 col-md-4">
    					<div class="hovereffect image-holder-prac">
               <img src="images/area1.png" class="img-responsive">
-              <a href="area-of-practice.php"><div class="icon-injured"></div></a>
+              <a href="area-of-practice.php"><div class="icon-bg icon-injured"></div></a>
               <div class="overlay">
                 <h4>PERSONAL INJURY</h4>
               </div>
             </div>
 
    				</div>
-   				<div class="col-xs-8 col-sm-4 col-md-4">
+   				<div class="col-xs-12 col-sm-4 col-md-4">
    					<div class="hovereffect image-holder-prac">
-              <img src="images/area2.png" class="img-responsive">
-              <a href="area-of-practice.php"><div class="icon-court"></div></a>
+              <img src="images/area1.png" class="img-responsive">
+              <a href="area-of-practice.php"><div class="icon-bg icon-court"></div></a>
               <div class="overlay">
                 <h4>CRIMINAL LAW</h4>
               </div>
             </div>
    				</div>
-   				<div class="col-xs-8 col-sm-4 col-md-4">
+   				<div class="col-xs-12 col-sm-4 col-md-4">
    					<div class="hovereffect image-holder-prac">
-              <img src="images/area3.png" class="img-responsive">
-              <a href="area-of-practice.php"><div class="icon-family"></div></a>
+              <img src="images/area1.png" class="img-responsive">
+              <a href="area-of-practice.php"><div class="icon-bg icon-family"></div></a>
               <div class="overlay">
                 <h4> FAMILY LAW</h4>
               </div>
@@ -142,7 +140,8 @@
    						<p>
    							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
    						</p>
-   						<a class="btn btn-default btn-lg" href="#" role="button">About Us <i class="fa fa-long-arrow-right"></i></a>
+   						<a class="btn btn-default btn-about btn-aboutc icon-arrow-right" href="history.php" role="button">About Us   <!--  <i class="fa fa-long-arrow-right"></i> -->
+              </a>
    					</div>
    				</div>
    			</div>

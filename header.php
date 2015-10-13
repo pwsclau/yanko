@@ -45,22 +45,23 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><img src="images/logo.jpg"></a>
+        <a class="navbar-brand large" href="index.php"><img src="images/logo.jpg"></a>
+        <a href="index.php" class="navbar-brand mini"><img src="images/logo-mini.png" alt=""></a>
       </div>
 
       <ul class ="nav navbar-nav navbar-right upper-nav">
-          
-        <form role="search" method="get" class="search-form" >
-          <label>
-            <input type="search" 
-                  class="search-field" 
-                  placeholder="Search"  
-                  value="" name="s" 
-                  title="Search efter:">
-          </label>
-          <input type="submit" class="search-submit" value="Search">
-        </form>
-
+          <form role="search" method="get" class="search-form" >
+              <label>
+                      <span class="search-tag"><i class="icon icon-search"></i> 
+                        Search
+                      </span>
+                       <input type="search" 
+                      class="search-field"  
+                      value="">
+                      
+              </label>
+              <input type="submit" class="search-submit" value="Search"> 
+            </form>
           <li><a href="#">T: 403.262.0262</a></li>
           <li><a href="#">F: 403.204.0284</a></li>
         </ul>
@@ -69,7 +70,7 @@
       <div class="collapse navbar-collapse navbar-list" id="header-menu">
 
 
-        <ul class="nav navbar-nav navbar-right ">
+        <ul class="nav navbar-nav navbar-right lower-nav">
 
           <li><a href="index.php">HOME</a></li>
           <li class="dropdown">
@@ -88,7 +89,7 @@
             </ul>
           </li>
           <li><a href="lawyers.php">LAWYERS</a></li>
-          <li><a href="contact-us.php" class="btn btn-info" role="button">CONTACT US <i class="fa fa-long-arrow-right"></i></a></li>
+          <li class="hvr-grow-shadow"><a href="contact-us.php" class="btn btn-info btn-infoc icon-arrow-right" role="button">CONTACT US </a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

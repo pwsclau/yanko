@@ -1,3 +1,6 @@
+.mini {
+	display: none;
+}
 .navbar {
 	border: none;
 	margin-bottom: 10px;
@@ -26,6 +29,7 @@
 
 .nav > li > a {
 	letter-spacing: 2px;
+	color: @gray;
 }
 
 .navbar-right {
@@ -38,10 +42,45 @@
 	}
 
 	.btn-info {
+		padding: 1em 3em;
 		background-color: #ffffff;
-		/*border-color: #62666e;*/
+		overflow: hidden;
+
+		&:before  {
+			position: absolute;
+			height: 100%;
+			font-size: 125%;
+			line-height: 3.5;
+			transition: all 0.3s;	
+			color: @gray;
+			}
+
+		&:hover {
+			color: @gray;
+		}
+	}
+
+	.btn-infoc {
+		position: relative;
+		&:before {
+			left: 75%;
+			opacity: 0;
+			top: -7px;
+		}
+		&:hover:before {
+			left: 83%;
+			opacity: 1;
+			top: -7px;
+		}
 	}
 }
+
+.icon-arrow-right:before {
+	content: "\e803";
+	font-family: 'icomoon';
+}
+
+
 
 
 

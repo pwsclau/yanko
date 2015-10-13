@@ -1,24 +1,36 @@
 .search-form {
     position: absolute;
     right: 36%;
-    top: 5%;
+    top: 6%;
+    color: #777777;
+    font-family: @bran_reg;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  label {
+    font-weight: normal;
+  }
 }
 
 .search-field {
     background-color: transparent;
-    background-image: url('../images/search_icon.png');
-    background-position: 5px center;
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
     border: none;
     cursor: pointer;
-    height: 37px;
     margin: 3px 0;
-    padding: 0 0 0 34px;
+    padding: 5px;
     position: relative;
     -webkit-transition: width 400ms ease, background 400ms ease;
     transition:         width 400ms ease, background 400ms ease;
     width: 0;
+}
+
+.search-tag {
+  letter-spacing: 2px;
+  cursor: pointer;
+    .icon-search {
+      font-size: 15px;
+    }
 }
 
 .search-field:focus {

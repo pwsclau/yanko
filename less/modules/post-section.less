@@ -4,14 +4,22 @@
 	background-attachment: fixed;
 	width: 100%;
 	position: relative;
-	padding-bottom: 7em !important;
+	padding-bottom: 7em;
 
 	.arrows {
 		font-size: 20px;
-		padding: 0.5em 2em;
+		padding: 7px 45px;
+		margin-right: 1em;
+		&:hover, &:active, &:focus {
+			.btn-post();
+		}
 	}
 }
 
+.btn-post {
+	background-color: #a4aabc;
+	color: @white;
+}
 .post-subtitle {
 	letter-spacing: 1px;
 	font-family: @bran_reg;
@@ -37,6 +45,28 @@
 	position: relative;
 	top: 1.5em;
 }
+
+.date-wrap{
+	display: block;
+}
+
+.white-date {
+	padding: 5px;
+	text-align: center;
+	background-color: @white;
+	color: @gray;
+	display: block;
+}
+
+.blue-date {
+	padding: 5px;
+	text-align: center;
+	background-color: @darkblue;
+	color: @white;
+	display: block;
+}
+
+
 
 
 

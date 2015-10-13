@@ -209,6 +209,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/contact-us-banner.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 358210,
+		"inputAbbreviatedPath": "\/images\/contact-us-banner.jpg",
+		"outputAbbreviatedPath": "\/images\/contact-us-banner.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/date.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -282,6 +293,17 @@
 		"initialSize": 28054,
 		"inputAbbreviatedPath": "\/images\/hist2.jpg",
 		"outputAbbreviatedPath": "\/images\/hist2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/logo-mini.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7068,
+		"inputAbbreviatedPath": "\/images\/logo-mini.png",
+		"outputAbbreviatedPath": "\/images\/logo-mini.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -477,6 +499,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/main.js",
 		"outputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/main-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/main-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1962,6 +1995,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/less\/modules\/copy.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/modules\/copy.less",
+		"outputAbbreviatedPath": "\/less\/css\/copy.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/less\/modules\/fonts.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -2082,6 +2135,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/less\/modules\/icomoon.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/modules\/icomoon.less",
+		"outputAbbreviatedPath": "\/less\/css\/icomoon.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/less\/modules\/icons.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -2102,7 +2175,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/modules\/modal.less": {
+	"\/less\/modules\/list.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -2110,8 +2183,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/modules\/modal.less",
-		"outputAbbreviatedPath": "\/less\/css\/modal.css",
+		"inputAbbreviatedPath": "\/less\/modules\/list.less",
+		"outputAbbreviatedPath": "\/less\/css\/list.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2122,7 +2195,7 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/less\/modules\/para.less": {
+	"\/less\/modules\/media-query.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -2130,8 +2203,28 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/modules\/para.less",
-		"outputAbbreviatedPath": "\/less\/css\/para.css",
+		"inputAbbreviatedPath": "\/less\/modules\/media-query.less",
+		"outputAbbreviatedPath": "\/less\/css\/media-query.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/less\/modules\/modal.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/less\/modules\/modal.less",
+		"outputAbbreviatedPath": "\/less\/css\/modal.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

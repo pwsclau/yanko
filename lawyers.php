@@ -7,7 +7,8 @@
 	<div class="section section-team">
 		<div class="container">
 			<div class="section-title">
-				<h2>Meet The Team</h2>
+				<h2 class = "animated zoomIn">Meet The Team</h2>
+				<div class="cline-15"></div>
 			</div>
 			<div class="section-desc">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -15,7 +16,7 @@
 
 			<div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-xs-6">
 					<div class="lawyer-holder">
 						<div class="row">
 							<div class="col-md-7">
@@ -35,7 +36,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-x	s-6">
 					<div class="lawyer-holder">
 						<div class="row">
 							<div class="col-md-7">

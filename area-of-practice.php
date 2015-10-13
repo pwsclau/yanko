@@ -36,12 +36,12 @@
 						<h4>Practising Lawyers</h4>
 						<div class="line-16-left"></div>
 					</div>
-					<ul>
-						<li><span class="icon-justice"></span> David Yanko</li>
-						<li><span class="icon-justice"></span> Brad Popovic</li>
-						<li><span class="icon-justice"></span> Helmut Ehms</li>
-						<li><span class="icon-justice"></span> Herman Sidhu</li>
-						<li><span class="icon-justice"></span> James Uniacke</li>
+					<ul class="list-icon">
+						<li><a href="">David Yanko</a></li>
+						<li><a href="">Brad Popovic</a></li>
+						<li><a href="">Helmut Ehms</a></li>
+						<li><a href="">Herman Sidhu</a></li>
+						<li><a href="">James Uniacke</a></li>
 					</ul>
 				</div>
 			</div>

@@ -6,9 +6,9 @@
             <div class="footer-details">
               <h4>AREAS OF PRACTICE</h4>
               <ul>
-                <li>Personal Injury</li>
-                <li>Criminal Law</li>
-                <li>Family Law</li>
+                <li><a href="area-of-practice.php">Personal Injury</a></li>
+                <li><a href="area-of-practice.php">Criminal Law</a></li>
+                <li><a href="area-of-practice.php">Family Law</a></li>
               </ul>
             </div>
           </div>
@@ -17,11 +17,11 @@
             <div class="footer-details">
               <h4>QUICK LINKS</h4>
               <ul>
-                <li>About us</li>
-                <li>Lawyers</li>
-                <li>Blogs</li>
-                <li>Testimonials</li>
-                <li>Contact us</li>
+                <li><a href="">About us</a></li>
+                <li> <a href="lawyers.php">Lawyers</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="contact-us.php">Contact us</a></li>
               </ul>
             </div>
           </div>
@@ -56,13 +56,13 @@
             <h4>SOCIAL MEDIA</h4>
               <ul class = "sm-list">
                 <li>
-                  <i class="fa fa-facebook sm-links gray-er"></i>
+                  <a href="#"><i class="fa fa-facebook sm-links gray-er"></i></a>
                 </li>
                 <li>
-                  <i class="fa fa-twitter sm-links gray-er"></i>
+                  <a href="#"><i class="fa fa-twitter sm-links gray-er"></i></a>
                 </li>
                 <li>
-                  <i class="fa fa-linkedin-square sm-links gray-er"></i>
+                  <a href="#"><i class="fa fa-linkedin-square sm-links gray-er"></i></a>
                 </li>
               </ul>
           </div>
@@ -94,13 +94,14 @@
 
             <ul class="sm-list">
               <li>
-                <i class="fa fa-facebook sm-links"></i>
+                <a href="#"><i class="fa fa-facebook sm-links"></i></a>
               </li>
               <li>
-                  <i class="fa fa-twitter sm-links"></i>
+                <a href="#"><i class="fa fa-twitter sm-links"></i></a>
+                 
                 </li>
                 <li>
-                  <i class="fa fa-linkedin-square sm-links"></i>
+                  <a href="#"><i class="fa fa-linkedin-square sm-links"></i></a>
                 </li>
             </ul>
           </div>
@@ -119,7 +120,7 @@
             
             <h4 class="modal-subtitle">Assistants To Mr. Yanko</h4>
             <div class="line-16-left"></div>
-            <ul>
+            <ul class ="list-icon">
               <li>Bridget Jacobs</li>
               <li>San Kwok</li>
               <li>Evelyn Jacobs</li>
@@ -136,17 +137,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-      var divs = $('.heading-46');
-        $(window).scroll(function(){
-           if($(window).scrollTop()<100){
-                 divs.stop(true,true).fadeIn(1500);
-           } else {
-                 divs.stop(true,true).fadeOut(1500);
-           }
-        });
-    </script>
+    <script src="js/main.js"></script>
     
   </body>
 </html>

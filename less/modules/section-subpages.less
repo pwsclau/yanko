@@ -1,5 +1,5 @@
 .section-practice {
-	padding: 8em 0;
+	padding: 4em 0;
 
 	h2, h4 {
 		text-align: left;
@@ -32,47 +32,92 @@
 	}
 }
 .section-team {
-	padding: 8em 0;
+	padding: 4em 0;
 
 	.section-desc p {
 		text-align: center;
-		padding: 0px 5em;
+		padding: 0px 7em;
 	}
 	.lawyer-holder	{
-		background-color: #404244;
 		overflow: hidden;
-		margin-top: 4em;
+		height: 230px;
+		margin-top: 5em;
+		background-color: #404244;
 
 		.details-lawyer {
-			margin: 20px; 
+			padding: 30px;
 		}
+
+		h3 {
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+
+		h4 {
+			margin-top: 0;
+			margin-bottom: 8px;
+		}
+
 		h3, h4 {
 			color: #ffffff;
 		}
+		h4 {
+			font-size: 15px;
+			font-family: @bran_reg;
+		}
 		p {
+			margin-bottom: 18px;
 			color: #9c9c9c;
+			font-size: 17px;
+			line-height: 1.2;
 		}
 		.btn-default {
 			background-color: #a4aabc;
 			color: #ffffff;
-			padding: 10px 30px;
+			border: 0;
+			padding: 7px 25px;
+			font-size: 13px;
+			font-family: @bran_bold;
 		}
 	}
 	.img-lawyer-holder {
 		max-width: 200px;
 		width: 100%;
+		height: 230px;
+
+		img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			max-width: none;
+		}
 	}
 }
 
 .section-history {
-	padding: 8em 0;
-}
-.history-content {
-	margin: 0px 5em;
-}
-
-.history-content-holder {
-	margin-top: 8em;
+	padding: 5.5em 0 7.5em 0;
+	.section-title {
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+	.section-holder p {
+		padding-top: 35px;
+	} 
+	.title-left {
+		text-align: left;
+	}
+	.history-content {
+		margin: 0px 5em;
+	}
+	.history-content-holder {
+		margin-top: 8em;
+		p {
+			padding-top: 35px;
+		}
+	}
+	/*p {
+		padding-top: 20px;
+	}*/
 }
 .section-holder {
 	padding: 0em 1em 0em 1em;

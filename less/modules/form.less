@@ -18,9 +18,24 @@ textarea#message {
 	font-size: 16px;
 }
 
+.submit {
+	padding: 1em 3.5em !important;
+	font-size: 16px;
+	&:hover, &:active, &:focus {
+		.btn-post();
+		font-size: 16px;
+	}
+}
+
+.btn-post-md {
+	.btn-post();
+	/*font-size: 16px;*/
+}
+
 form .btn {
 	margin-top: 30px;
-	padding: 1.5em 3.5em;
+	/*padding: 1.5em 3.5em;*/
+	padding: 1.3em 4.3em;
 	font-family: @bran_bold ;
 }
 
@@ -28,12 +43,9 @@ form .btn {
 	outline: none;
 }
 
-.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
-	background-color: rgba(46, 58, 94, 0.34);
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
 	color: @white;
 }
-
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .open > .dropdown-toggle.btn-default {
-	color: @white;
-	background-color: rgba(46, 58, 94, 0.34);
+.form-wrapper {
+	margin-top: 3em;
 }

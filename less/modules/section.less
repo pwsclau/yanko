@@ -7,7 +7,7 @@
 	color: #ffffff;
 }
 .section {
-	padding: 8em 0;
+	padding: 90px 0;
 	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;
 }
@@ -17,6 +17,9 @@
 
 	img {
 		width: 100%;
+	}
+	.overlay {
+		border: 1px solid #e5e5e7;
 	}
 }
 .section-title {
@@ -39,17 +42,52 @@
 }
 .section-desc {
 	margin-top: 2em;
-	padding-right: 5em;
 
-	.btn {
+	.btn-about {
 		margin-top: 30px;
+		font-size: 15px;
+		font-family: @bran_bold;
+		padding: 1em 2.5em;
+		
+		&:hover, &:active, &:focus {
+			background-color: #a4aabc;
+			border: 0;
+		}
+
+		&:before {
+			position: absolute;
+			height: 100%;
+			font-size: 125%;
+			line-height: 3.5;
+			transition: all 0.3s;	
+			color: @white;
+		}
+		&:hover {
+			color: @white;
+			padding-right: 3em;
+		}
 	}
+	.btn-aboutc {
+		position: relative;
+		&:before {
+			left: 76%;
+			opacity: 0;
+			top: -10px;
+		}
+		&:hover:before {
+			left: 78%;
+			opacity: 1;
+			top: -10px;
+		}
+	}
+
 }
 .section-subtitle {
 	margin-bottom: 30px;
 }
 .section-areas {
 	background-color: #f6f6f6;
+	padding-bottom: 8em;
 	h4 {
 		color: #29292a;
 	}

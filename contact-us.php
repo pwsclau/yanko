@@ -20,6 +20,37 @@
 							<br><br>
 							Time is an important element in your case. Do not delay in contacting us. We look forward to exceeding your expectations in everything we do.
 						</p>
+
+						<div class="form-wrapper">
+							<form role="form"> 
+                <div class="form-group">
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="name" placeholder="Enter your first name">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="email" placeholder="Enter your last name">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="number" class="form-control" id="phone-number" placeholder="Enter your phone number">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="phone-number" placeholder="Enter your email address">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control"id="case" rows="10" placeholder="Enter your case details"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default submit">Submit</button>
+              </form>
+						</div>
 					</div>
 					<div class="col-md-4 para-16" >
 						<h2 class="section-title left">Contact Info</h2>
