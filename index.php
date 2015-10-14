@@ -89,29 +89,36 @@
    				<div class="col-xs-12 col-sm-4 col-md-4">
    					<div class="hovereffect image-holder-prac">
               <img src="images/area1.png" class="img-responsive">
-              <a href="area-of-practice.php"><div class="icon-bg icon-injured"></div></a>
-              <div class="overlay">
-                <h4>PERSONAL INJURY</h4>
-              </div>
+
+              <a href="area-of-practice.php">
+                <div class="icon-bg icon-injured"></div>
+                <div class="overlay">
+                  <h4>PERSONAL INJURY</h4>
+                </div>
+              </a>
             </div>
 
    				</div>
    				<div class="col-xs-12 col-sm-4 col-md-4">
    					<div class="hovereffect image-holder-prac">
               <img src="images/area1.png" class="img-responsive">
-              <a href="area-of-practice.php"><div class="icon-bg icon-court"></div></a>
-              <div class="overlay">
-                <h4>CRIMINAL LAW</h4>
-              </div>
+              <a href="area-of-practice.php">
+                <div class="icon-bg icon-court"></div>
+                  <div class="overlay">
+                  <a href="area-of-practice.php"><h4>CRIMINAL LAW</h4></a>
+                </div>
+              </a>
             </div>
    				</div>
    				<div class="col-xs-12 col-sm-4 col-md-4">
    					<div class="hovereffect image-holder-prac">
               <img src="images/area1.png" class="img-responsive">
-              <a href="area-of-practice.php"><div class="icon-bg icon-family"></div></a>
-              <div class="overlay">
-                <h4> FAMILY LAW</h4>
-              </div>
+              <a href="area-of-practice.php">
+                <div class="icon-bg icon-family"></div>
+                  <div class="overlay">
+                  <a href="area-of-practice.php"><h4> FAMILY LAW</h4></a>
+                </div>
+              </a>
             </div>
    				</div>
    			</div>

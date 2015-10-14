@@ -80,7 +80,7 @@
 
 
    			<div class="col-md-6">
-   				<div class="section-subtitle">
+   				<div class="section-subtitle  request-wrapper">
    					<h2 class = "post-subtitle">Request Info</h2>
    				</div>
 
@@ -90,20 +90,20 @@
                 <div class="form-group">
 
                   <div class="row">
-                    <div class="col-md-6 col-xs-6">
+                    <div class="col-md-6 col-xs-12">
                       <input type="text" class="form-control" id="name" placeholder="Enter your name">
                     </div>
-                    <div class="col-md-6 col-xs-6">
+                    <div class="col-md-6 col-xs-12">
                       <input type="text" class="form-control" id="email" placeholder="Enter your e-mail">
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="row">
-                    <div class="col-md-6 col-xs-6">
+                    <div class="col-md-6 col-xs-12">
                       <input type="number" class="form-control" id="phone-number" placeholder="Enter your phone">
                     </div>
-                    <div class="col-md-6 col-xs-6">
+                    <div class="col-md-6 col-xs-12">
                       <input type="text" class="form-control" id="phone-number" placeholder="Enter the case">
                     </div>
                   </div>
