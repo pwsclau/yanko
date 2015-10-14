@@ -14,12 +14,13 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			</div>
 
-			<div class="row">
+			<div class="lawyer-wrapper">
+				<div class="row">
 
-				<div class="col-md-6 col-sm-6 col-xs-6">
+				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="lawyer-holder">
 						<div class="row">
-							<div class="col-md-7">
+							<div class="col-md-7 col-sm-7 col-xs-7">
 								<div class="details-lawyer">
 									<h3>David Yanko</h3>
 										<h4>(Founder & Managing Partner)</h4>
@@ -27,7 +28,7 @@
 										<button type="button" class="btn btn-default" data-toggle="modal" data-target="#lawyer_data">READ MORE</button>
 								</div>
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-5 col-sm-5 col-xs-5">
 								<div class="img-lawyer-holder">
 									<img src="images/att1.jpg">
 								</div>
@@ -36,10 +37,10 @@
 					</div>
 				</div>
 
-				<div class="col-md-6 col-sm-6 col-x	s-6">
+				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="lawyer-holder">
 						<div class="row">
-							<div class="col-md-7">
+							<div class="col-md-7 col-sm-7 col-xs-7">
 								<div class="details-lawyer">
 									<h3>David Yanko</h3>
 										<h4>(Founder & Managing Partner)</h4>
@@ -47,7 +48,7 @@
 										<button type="button" class="btn btn-default">READ MORE</button>
 								</div>
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-5 col-sm-5 col-xs-5">
 								<div class="img-lawyer-holder">
 									<img src="images/att1.jpg">
 								</div>
@@ -56,10 +57,10 @@
 					</div>
 				</div>
 
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="lawyer-holder">
 						<div class="row">
-							<div class="col-md-7">
+							<div class="col-md-7 col-sm-7 col-xs-7">
 								<div class="details-lawyer">
 									<h3>David Yanko</h3>
 										<h4>(Founder & Managing Partner)</h4>
@@ -67,7 +68,7 @@
 										<button type="button" class="btn btn-default">READ MORE</button>
 								</div>
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-5 col-sm-5 col-xs-5">
 								<div class="img-lawyer-holder">
 									<img src="images/att1.jpg">
 								</div>
@@ -75,9 +76,9 @@
 						</div>
 					</div>
 				</div>
-
-
 			</div>
+			</div>
+
 		</div>
 	</div>
 

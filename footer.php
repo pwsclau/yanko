@@ -13,7 +13,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-6">
             <div class="footer-details">
               <h4>QUICK LINKS</h4>
               <ul>
@@ -26,7 +26,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-6">
             <div class="location">
               
               <div class="footer-details">
@@ -52,7 +52,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-6">
             <h4>SOCIAL MEDIA</h4>
               <ul class = "sm-list">
                 <li>
@@ -87,7 +87,10 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
             <div class="modal-img">
-              <img src="images/david4.png" alt="">
+              <!-- <img src="images/david4.png" alt=""> -->
+              <div class="modal-icon">               
+              </div>
+              
             </div>
             <h2 class="modal-title" id="lawyer-modal-label">David G. Yanko</h2>
             <h4>(Founder & Managing Partner)</h4>

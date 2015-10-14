@@ -50,6 +50,7 @@
       </div>
 
       <ul class ="nav navbar-nav navbar-right upper-nav">
+        <li>
           <form role="search" method="get" class="search-form" >
               <label>
                       <span class="search-tag"><i class="icon icon-search"></i> 
@@ -62,6 +63,7 @@
               </label>
               <input type="submit" class="search-submit" value="Search"> 
             </form>
+        </li>
           <li><a href="#">T: 403.262.0262</a></li>
           <li><a href="#">F: 403.204.0284</a></li>
         </ul>

@@ -7076,6 +7076,12 @@ form .btn {
   content: "\e803";
   font-family: 'icomoon';
 }
+.search-form {
+  position: relative !important;
+  right: 0 !important;
+  top: 0 !important;
+  margin-top: 10px !important;
+}
 .heading-46 {
   font-family: 'Brandon_reg';
   font-size: 46px;
@@ -7451,7 +7457,8 @@ form .btn {
   }
   .section-vismis,
   .section-history,
-  .section-contact {
+  .section-contact,
+  .section-team {
     padding-bottom: 5em !important;
   }
 }
@@ -7612,6 +7619,12 @@ form .btn {
   }
   .section-contact ul {
     margin-top: 1em !important;
+  }
+  .section-team .section-desc p {
+    padding: 0px 3em;
+  }
+  .section-team .lawyer-wrapper {
+    padding: 0 6em;
   }
 }
 @media (max-width: 736px) {
@@ -7876,6 +7889,14 @@ form .btn {
   .section-practice .list-icon li a {
     font-size: 16px !important;
   }
+  .section-contact p {
+    margin-top: 1em !important;
+    padding-right: 2em !important;
+  }
+  .section-contact .para-18,
+  .section-contact .para-16 {
+    padding: 0 2em;
+  }
 }
 @media (max-width: 414px) {
   .banner .carousel-caption p {
@@ -8031,6 +8052,12 @@ button.close {
 	margin-left: auto;
 	margin-bottom: 1.5em;*/
   margin: 2em auto 2em auto;
+}
+.modal-icon {
+  background: #000000 url('../images/david4.png') no-repeat;
+  width: 100%;
+  min-height: 300px;
+  background-position: center !important;
 }
 .section-post {
   background: url('../images/post-sec-bg.jpg') no-repeat;
@@ -8344,6 +8371,11 @@ input[type="search"] {
 }
 .section-history .hist-img-holder img {
   width: 100%;
+}
+.section-history .history-content-holder:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 .section-holder {
   padding: 0em 1em 0em 1em;
