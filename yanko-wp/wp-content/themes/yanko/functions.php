@@ -401,3 +401,43 @@ function revcon_change_post_object() {
  
 add_action( 'admin_menu', 'revcon_change_post_label' );
 add_action( 'init', 'revcon_change_post_object' );
+
+///////POST-TYPES LAWYERS 
+function custom_post_lawyers() {
+    $labels = array(
+      'name'               => _x( 'Lawyers', 'post type general name' ),
+      'singular_name'      => _x( 'Lawyer', 'post type singular name' ),
+      'add_new'            => _x( 'Add New', 'Lawyer' ),
+      'add_new_item'       => __( 'Add New Lawyer' ),
+      'edit_item'          => __( 'Edit Lawyer' ),
+      'new_item'           => __( 'New Lawyer' ),
+      'all_items'          => __( 'All Lawyers' ),
+      'view_item'          => __( 'View Lawyer' ),
+      'search_items'       => __( 'Search Lawyer' ),
+      'not_found'          => __( 'No Lawyer found' ),
+      'not_found_in_trash' => __( 'No Lawyer found in the Trash' ), 
+      'parent_item_colon'  => '',
+      'menu_name'          => 'Lawyers'
+    );
+    $args = array(
+
+    	'labels'        => $labels,
+        'description'   => 'Holds our Lawyer specific data.',
+        'public'        => true,
+        'menu_position' => 5,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+        'has_archive'   => true,    
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'lawyer', 'with_front' => true),
+        'capability_type' => 'post',
+        'hierarchical' => false,
+    );
+
+
+    register_post_type( 'lawyer', $args ); 
+
+
+  }
+  add_action( 'init', 'custom_post_lawyers' );

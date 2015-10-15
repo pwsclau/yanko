@@ -3,7 +3,8 @@
 get_header(); ?>
 
 <?php include ('header.php'); ?>
-
+<?php if ( have_posts() ) : ?>
+  <?php while ( have_posts() ) : the_post(); ?>
 	<div class="subpage-banner practice-subpg">
 		<!-- <img src="images/subpg-banner.jpg"> -->
 		<h1 class="heading-46 "><?php the_title(); ?></h1>
@@ -37,6 +38,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-
+	<?php endwhile; ?>
+<?php endif; wp_reset_query(); ?>
 <?php include ('post-section.php'); ?>
 <?php get_footer(); ?>
