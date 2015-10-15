@@ -1,1 +1,0 @@
-!function($){$(window).load(function(){$(".cline-15").addClass("is-triggered"),$(".cline-50").addClass("is-triggered")});var n=$(".heading-46");$(window).scroll(function(){$(window).scrollTop()<100?n.stop(!0,!0).fadeIn(1500):n.stop(!0,!0).fadeOut(1500)});var o=$(".section-content");$(window).scroll(function(){$(window).scrollTop()<500&&o.animated(!0,!0).fadeInUp(1500)})}(jQuery);
