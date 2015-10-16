@@ -1,8 +1,16 @@
 <?php 
 /* Template Name: History Page */
 get_header(); ?>
-	<div class="subpage-banner history-subpg">
+	<!-- <div class="subpage-banner history-subpg">
 		<h1 class = "heading-46">OUR HISTORY</h1>
+	</div> -->
+<?php if ( have_posts() ) : ?>
+  <?php while ( have_posts() ) : the_post(); ?>
+
+	<div class="subpage-banner" style="background: #000 url('<?php echo the_field('banner_img'); ?>') no-repeat; ">
+			<h1 class="heading-46 ">
+				OUR HISTORY
+			</h1>
 	</div>
 
 	<div class="section section-history">
@@ -41,18 +49,25 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="hist-img-holder">
-								<?php echo get_the_post_thumbnail(61); ?>
-							</div>
+							<?php
+		            global $post;
+		            $src = wp_get_attachment_image_src( get_post_thumbnail_id(61), 'full', false, '' );
+		            ?>
+								<div class="hist-img-holder" style="background: url(<?php echo $src[0]; ?>) no-repeat; background-position: center 30% !important"> 
+		            </div> 
 						</div>
 					</div>
 
 					<div class="history-content-holder animated slideInRight">
 					<div class="col-md-6">
-						<div class="hist-img-holder">
-							<?php echo get_the_post_thumbnail(6); ?>
-						<!-- 	<img src="<?php echo get_template_directory_uri(); ?>/images/hist1.jpg"> -->
-						</div>
+						
+						<?php
+            global $post;
+            $src = wp_get_attachment_image_src( get_post_thumbnail_id(6), 'full', false, '' );
+            ?>
+						<div class="hist-img-holder" style="background: url(<?php echo $src[0]; ?>) no-repeat; background-position: center 30% !important"> 
+            </div> 
+
 					</div>
 					<div class="col-md-6">
 						<div class="history-desc">
@@ -75,6 +90,7 @@ get_header(); ?>
 		</div>
 		</div>
 	</div>
-
+	<?php endwhile; ?>
+<?php endif; wp_reset_query(); ?>
 <?php include ('post-section.php'); ?>
 <?php get_footer(); ?>

@@ -14,7 +14,7 @@
       <div class="container">
         <div class="row p5-left-right">
 
-          <div class="col-md-3 col-sm-3 col-xs-6">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="footer-details">
               <h4>AREAS OF PRACTICE</h4>
               <ul>
@@ -25,7 +25,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="footer-details">
               <h4>QUICK LINKS</h4>
               <ul>
@@ -38,7 +38,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="location">
               
               <div class="footer-details">
@@ -64,7 +64,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <h4>SOCIAL MEDIA</h4>
               <ul class = "sm-list">
                 <li>

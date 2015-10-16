@@ -8,7 +8,7 @@ get_header(); ?>
 <div id="banner-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
   <!-- Indicators -->
 
-  <div class="banner banner-slider">
+  <div class="banner banner-slider" style="background: url('<?php echo the_field('banner_img'); ?>'); no-repeat; background-size: cover;">
     <ol class="carousel-indicators">
       <li data-target="#banner-carousel" data-slide-to="0" class="active"></li>
       <li data-target="#banner-carousel" data-slide-to="1"></li>
@@ -19,15 +19,14 @@ get_header(); ?>
       <div class="item active">
         <div class="row">
           <div class="container p-0 m-2">
-            <div class="col-md-6">
+            <div class="col-md-6 col-xs-12">
               <div class="carousel-caption">
-                <h1 class= "carousel-title animated pulse">Need Legal Assistance?</h1>
+                <h1 class= "carousel-title animated pulse">
+                  <?php echo the_field('content_title'); ?>
+                </h1>
 
                 <div class="banner-content animated slideInLeft">
-                  <p class= "carousel-desc ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-
-
-                <!-- <a href = "lawyers.php"class = "hvr-grow-shadow">LEARN MORE <i class="fa fa-long-arrow-right"></i></a> -->
+                  <?php the_content(); ?>
 
                 <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
                 </div>
@@ -36,8 +35,7 @@ get_header(); ?>
           </div>
           <div class="col-md-6">
             <div class="image-holder">
-
-              <img class="carousel-img animated slideInRight" src="<?php echo get_template_directory_uri(); ?>/images/attorney.png" alt="">
+              <img class="carousel-img animated slideInRight" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post->ID ), 'full' ); ?>" alt="">
             </div>
             
           </div>
@@ -49,23 +47,21 @@ get_header(); ?>
           <div class="container p-0 m-2">
             <div class="col-md-6">
               <div class="carousel-caption">
-                <h1 class= "carousel-title animated pulse">Need Legal Assistance?</h1>
+                <h1 class= "carousel-title animated pulse">
+                  <?php echo the_field('content_title'); ?>
+                </h1>
                 <div class="banner-content animated slideInLeft">
-                  <p class= "carousel-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-
-                <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
+                  <?php the_content(); ?>
+                  <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
                 </div>
-                
               </div>
           </div>
           <div class="col-md-6">
             <div class="image-holder">
-              <img class="carousel-img animated slideInRight" src="<?php echo get_template_directory_uri(); ?>/images/attorney.png" alt="">
+              <img class="carousel-img animated slideInRight" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id( $post->ID ), 'full' ); ?>" alt="">
             </div>
-            
           </div>
           </div>
-
         </div>
       </div>
 
@@ -82,6 +78,7 @@ get_header(); ?>
     </div>
   
 </div>
+  
 	
    <div class="section section-areas">
    	<div class="container">
@@ -99,7 +96,7 @@ get_header(); ?>
                 <a href="<?php echo get_post_permalink(18); ?>">
                   <div class="icon-bg icon-injured"></div>
                   <div class="overlay">
-                    <h4><?php echo get_the_title(18); ?></h4>
+                    <a href="<?php echo get_post_permalink(18); ?>"><h4><?php echo get_the_title(18); ?></h4></a>
                   </div>
                 </a>
               </div>
@@ -107,22 +104,22 @@ get_header(); ?>
      				</div>
      				<div class="col-xs-12 col-sm-4 col-md-4">
      					<div class="hovereffect image-holder-prac">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/area1.png" class="img-responsive">
-                <a href="area-of-practice.php">
+                 <?php echo get_the_post_thumbnail(16); ?>
+                <a href="<?php echo get_post_permalink(16); ?>">
                   <div class="icon-bg icon-court"></div>
                     <div class="overlay">
-                    <a href="area-of-practice.php"><h4>CRIMINAL LAW</h4></a>
+                    <a href="<?php echo get_post_permalink(16); ?>"><h4><?php echo get_the_title(16); ?></h4></a>
                   </div>
                 </a>
               </div>
      				</div>
      				<div class="col-xs-12 col-sm-4 col-md-4">
      					<div class="hovereffect image-holder-prac">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/area1.png" class="img-responsive">
-                <a href="area-of-practice.php">
+                <?php echo get_the_post_thumbnail(20); ?>
+                <a href="<?php echo get_post_permalink(20); ?>">
                   <div class="icon-bg icon-family"></div>
                     <div class="overlay">
-                    <a href="area-of-practice.php"><h4> FAMILY LAW</h4></a>
+                    <a href="<?php echo get_post_permalink(20); ?>"><h4><?php echo get_the_title(20); ?></h4></a>
                   </div>
                 </a>
               </div>
@@ -140,12 +137,15 @@ get_header(); ?>
    		</div>
    		<div class="section-content">
    			<div class="row">
-   				<div class="col-md-6">
+   				<div class="col-md-6 col-sm-6 col-xs-12">
    					<div class="sec-image-holder">
+
               <?php echo get_the_post_thumbnail(54); ?>
+  
+
    					</div>
    				</div>
-   				<div class="col-md-6 left-padd-5">
+   				<div class="col-md-6 col-sm-6 col-xs-12 left-padd-5">
    					<div class="section-subtitle">
               <h3>
                 <?php echo get_field(content_title, 54); ?>

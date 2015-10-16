@@ -21,9 +21,14 @@
               if ( have_posts() ) : ?>
                 <?php while(have_posts()) : the_post(); ?>
                     <div class="item <?php echo ($cntr == 0) ? 'active' : ''; ?>">
-                      <div class="post-img-holder">
-                          <?php the_post_thumbnail(); ?>
-                        </div>
+
+                      <?php
+                        global $post;
+                        $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false, '' );
+                        ?>
+                    <div class="post-img-holder" style="background: url(<?php echo $src[0]; ?>) no-repeat; background-position: center 30% !important">
+                         
+                    </div> 
                       
                         <div class="carousel-caption">
                            <div class="row">
@@ -42,7 +47,7 @@
                              </div>
                            </div>
                            <div class="desc">
-                              <p><?php the_content(); ?></p>
+                              <?php the_content(); ?>
                            </div>
                         </div>
                     </div>
@@ -59,7 +64,7 @@
       </div>
 
 
-   			<div class="col-md-6">
+   			<div class="col-md-6 ">
    				<div class="section-subtitle  request-wrapper">
    					<h2 class = "post-subtitle">Request Info</h2>
    				</div>

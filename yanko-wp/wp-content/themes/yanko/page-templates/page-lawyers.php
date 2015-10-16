@@ -1,11 +1,16 @@
 <?php
 /*Template Name: Lawyers Page */
 get_header();?>
+  <?php if ( have_posts() ) : ?>
+  <?php while ( have_posts() ) : the_post(); ?>
 
-	<div class="subpage-banner lawyers-subpg">
-		<!-- <img src="images/subpg-banner-lawyers.jpg"> -->
-		<h1 class ="heading-46">OUR ATTORNEYS</h1>
-	</div>
+
+<div class="subpage-banner" style="background: #000 url('<?php echo the_field('banner_img'); ?>') no-repeat; ">
+    
+    <h1 class="heading-46 ">
+      OUR ATTORNEYS
+    </h1>
+  </div>
 
 	<div class="section section-team">
 		<div class="container">
@@ -14,7 +19,7 @@ get_header();?>
 				<div class="cline-15"></div>
 			</div>
 			<div class="section-desc">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <?php echo the_content(); ?>
 			</div>
 
 			<div class="lawyer-wrapper">
@@ -114,6 +119,7 @@ get_header();?>
       </div>
     </div>
 
-
+    <?php endwhile; ?>
+<?php endif; wp_reset_query(); ?>
 <?php include ('post-section.php'); ?>
 <?php get_footer(); ?>

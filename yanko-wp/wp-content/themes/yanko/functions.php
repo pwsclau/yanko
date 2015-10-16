@@ -253,7 +253,7 @@ function twentyfifteen_scripts() {
 	wp_enqueue_script( 'twentyfifteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150330', true );
 
 	//YANKO START THEME
-	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/style.css');
+	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/main.css');
 	wp_enqueue_style( 'fonts-css', get_template_directory_uri() . '/css/font-awesome.min.css');
 	wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/css/animate.min.css');
 	wp_enqueue_style( 'hover-buttons-css', get_template_directory_uri() . '/css/hover-buttons/hover-min.css');
@@ -434,10 +434,7 @@ function custom_post_lawyers() {
         'capability_type' => 'post',
         'hierarchical' => false,
     );
-
-
     register_post_type( 'lawyer', $args ); 
-
-
   }
   add_action( 'init', 'custom_post_lawyers' );
+

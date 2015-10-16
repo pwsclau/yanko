@@ -2,12 +2,14 @@
 /*Template Name: Single Practice Page*/
 get_header(); ?>
 
-<?php include ('header.php'); ?>
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
-	<div class="subpage-banner practice-subpg">
-		<!-- <img src="images/subpg-banner.jpg"> -->
-		<h1 class="heading-46 "><?php the_title(); ?></h1>
+
+	<div class="subpage-banner" style="background: url('<?php echo the_field('banner_img'); ?>') no-repeat; ">
+		
+		<h1 class="heading-46 ">
+			<?php the_title(); ?>
+		</h1>
 	</div>
 
 	<div class="section section-practice">
@@ -19,7 +21,7 @@ get_header(); ?>
 						<div class="line-16"></div>
 					</div>
 					<div class="section-desc">
-						<p><?php the_content(); ?></p>
+						<?php the_content(); ?>
 					</div>
 				</div>
 				<div class="col-md-4">

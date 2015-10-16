@@ -49,7 +49,8 @@
         <li>
           <form role="search" method="get" class="search-form" >
               <label>
-                      <span class="search-tag"><i class="icon icon-search"></i> 
+                <i class="icon icon-search"></i> 
+                      <span class="search-tag">
                         Search
                       </span>
                        <input type="search" 
