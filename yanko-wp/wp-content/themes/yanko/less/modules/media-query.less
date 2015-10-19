@@ -1,3 +1,44 @@
+@media(max-width: 1624px) {
+	.banner {
+		.m-2 {
+			margin-left: 10% !important;
+		}
+	}
+}
+@media (max-width: 1448px) {
+	.banner {
+		.m-2 {
+			margin-left: 7% !important;
+		}
+	}
+}
+@media (max-width: 1360px) {
+	.banner {
+		.m-2 {
+			margin-left: 3% !important;
+		}
+	}
+}
+@media (max-width: 1190px) {
+	.section-areas {
+		.image-holder-prac {
+			max-height: 255px !important;
+		}
+		.icon-bg {
+			width: 125px !important;
+			height: 125px !important;
+		}
+		.icon-family:before, .icon-court:before, .icon-injured:before {
+			font-size: 65px !important;
+		}
+		.overlay {
+			height: 3.75em;
+			padding: 0.5em;
+		}
+	}
+	
+
+}
 @media (max-width: 1024px) {
 	.search-form {
 		top: -3 !important;
@@ -92,6 +133,58 @@
 	}
 }
 
+@media (max-width: 991px) {
+	.section-contact {
+		.left-title {
+			padding-bottom: 0 !important;
+		}
+		.para-18, .para-16 {
+			padding: 0 4em;
+		}
+		p {
+			margin-top: 1.5em !important;
+		}
+		form input {
+			margin-bottom: 1em;
+		}
+		.form-group {
+			margin-bottom: 0 !important;
+		}
+		ul {
+			margin-top: 1em !important;
+		}
+	}
+	.section-areas {
+		.image-holder-prac {
+		}
+		.icon-bg {
+			top: 40%;
+			width: 110px;
+			height: 110px;
+		}
+		.icon-injured, .icon-court, .icon-family {
+			&:before {
+				font-size: 60px;
+			}
+		}
+		.overlay {
+			position: relative;
+			pointer-events: none;
+			transform: none;
+			-webkit-transform: none;
+			transition: none;
+			-webkit-transition: none;
+		}
+		.hovereffect {
+			overflow: visible;
+		}
+		.hovereffect:hover img {
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.hvr-grow-shadow:active, .hvr-grow-shadow:focus, .hvr-grow-shadow:hover {
 		box-shadow: none;
@@ -143,35 +236,6 @@
 	.section {
 		h2 {
 			font-size: 25px;
-		}
-	}
-	.section-areas {
-		.image-holder-prac {
-		}
-		.icon-bg {
-			top: 40%;
-			width: 110px;
-			height: 110px;
-		}
-		.icon-injured, .icon-court, .icon-family {
-			&:before {
-				font-size: 60px;
-			}
-		}
-		.overlay {
-			position: relative;
-			pointer-events: none;
-			transform: none;
-			-webkit-transform: none;
-			transition: none;
-			-webkit-transition: none;
-		}
-		.hovereffect {
-			overflow: visible;
-		}
-		.hovereffect:hover img {
-			-webkit-transform: none;
-			transform: none;
 		}
 	}
 	.section-welcome {
@@ -264,24 +328,6 @@
 		padding-bottom: 5em !important;
 		padding: 10px 2em !important;
 	}
-
-	.section-contact {
-		.para-18, .para-16 {
-			padding: 0 4em;
-		}
-		p {
-			margin-top: 1.5em !important;
-		}
-		form input {
-			margin-bottom: 1em;
-		}
-		.form-group {
-			margin-bottom: 0 !important;
-		}
-		ul {
-			margin-top: 1em !important;
-		}
-	}
 	.section-team {
 		.section-desc p {
 			padding: 0px 3em;
@@ -300,6 +346,35 @@
 		}
 	}
 }
+
+@media(max-width: 767px) {
+	.img-lawyer-holder {
+		display: none;
+	}
+	.cline-15.is-triggered {
+		width: 10em;
+	}
+	.section-areas {
+		padding: 1em 15em !important;
+		padding-bottom: 5em !important;
+		.image-holder-prac {
+			margin-top: 3em;
+			margin-bottom: 3em;
+		}
+		.icon-bg {
+			top: 50%;
+			width: 150px !important;
+			height: 150px !important;
+		}
+		.icon-family:before, .icon-injured:before, .icon-court:before {
+			font-size: 85px !important;
+		}
+		.section-content {
+			margin-top: 0 !important;
+		}
+	}
+}
+
 @media (max-width: 736px) {
 	.navbar-header img {
 		width: 230px;
@@ -351,8 +426,8 @@
 	}
 	.section-areas {
 		.image-holder-prac {
-			margin-bottom: 5em;
-			padding: 0 15em;
+			margin-bottom: 3em;
+			padding: 0 14em;
 
 			.icon-bg {
 				top: 50%;
@@ -362,6 +437,9 @@
 			.icon-injured:before, .icon-court:before, .icon-family:before {
 				font-size: 70px;
 			}
+		}
+		.section-content {
+			margin-bottom: 5em !important;
 		}
 	}
 	.section-welcome {
@@ -460,11 +538,15 @@
 		}
 	}
 	.section-contact {
+
 		.form-wrapper {
 			padding: 0 25px;
 		}
 		p {
 			padding: 0px 0em;
+		}
+		.line-16 {
+			margin: auto;
 		}
 	}
 	.section-team {
@@ -473,9 +555,16 @@
 			margin: 0 0 0em;
 		}
 		.lawyer-wrapper {
+			padding: 0 10em;
 			p {
-				padding: 6px 0em;
+				padding: 10px 0em !important; 
 			}
+		}
+		.img-lawyer-holder {
+			display: none;
+		}
+		.lawyer-holder {
+			height: 220px !important;
 		}
 	}
 	.news-wrapper {
@@ -514,7 +603,7 @@
 	.section-areas  {
 		.image-holder-prac {
 			margin-top: 0px;
-			margin-bottom: 8em;
+			margin-bottom: 6em;
 			padding: 0 12em;
 		}
 		.cline-15 {
@@ -523,6 +612,9 @@
 		.hovereffect .overlay {
 			height: 60px;
 			padding: 10px;
+		}
+		.section-content {
+			margin-top: 3em !important;
 		}
 	}
 	.section-post {
@@ -573,9 +665,6 @@
 		.lawyer-holder {
 			margin-top: 3em !important;
 			height: 210px !important;
-			.details-lawyer {
-				padding: 1.5em 2.5em 1.5em 2em !important;
-			}
 		}
 	}
 }
@@ -594,15 +683,15 @@
 
 	.section-areas {
 		.image-holder-prac {
-			margin-bottom: 3em;
-
+			margin-bottom: 6em;
+			padding: 0 10em;
 			.icon-family:before, .icon-court:before, .icon-injured:before {
 				font-size: 60px;
 			}
 			.icon-bg {
 				width: 110px;
 				height: 110px;
-				top: 43%;
+				top: 50%;
 			}
 			h4 {
 				font-size: 17px;
@@ -668,6 +757,9 @@
 		.history-content-holder p {
 			padding: 25px 0 10px 0;
 		}
+		 p {
+			padding: 2.5 !important;
+		}
 	}
 	.subpage-banner {
 		height: 220px;
@@ -707,6 +799,17 @@
 			.btn-default {
 				padding: 7px 20px;
 			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.section-areas {
+		.image-holder-prac {
+			padding: 0 6em;
+		}
+		.section-content {
+			margin-bottom: 3em !important;
 		}
 	}
 }
@@ -781,11 +884,6 @@
 			padding: 0 !important;
 		}
 	}
-	.section-team {
-		/*.img-lawyer-holder {
-			display: none;
-		}*/
-	}
 }
 
 @media (max-width: 384px) {
@@ -838,6 +936,9 @@
 		.carousel-title {
 			font-size: 40px;
 		}
+	}
+	.section-team .lawyer-holder .details-lawyer {
+		padding: 1em !important;
 	}
 
 }

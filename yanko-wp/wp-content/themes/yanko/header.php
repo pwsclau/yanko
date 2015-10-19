@@ -40,7 +40,7 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand large" href="index.php"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg"></a>
+        <a class="navbar-brand large" href=""><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg"></a>
 
         <a href="index.php" class="navbar-brand mini"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-mini.png" alt=""></a>
       </div>
@@ -71,9 +71,9 @@
 
          <?php 
         wp_nav_menu( array(
-                'menu'              => 'main-menu',
-                'theme_location' => 'primary-menu',
-                'menu_class' => 'nav navbar-nav navbar-right lower-nav',
+                'menu'            => 'main-menu',
+                'theme_location'  => 'primary-menu',
+                'menu_class'      => 'nav navbar-nav navbar-right lower-nav',
                 'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
                 'walker'          => new wp_bootstrap_navwalker()
                 ));

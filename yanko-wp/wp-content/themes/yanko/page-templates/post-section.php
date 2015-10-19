@@ -48,7 +48,9 @@
                              </div>
                            </div>
                            <div class="desc">
-                              <?php the_content(); ?>
+                              <?php //the_content(); ?>
+                              <?php $content = get_the_content(); 
+                                echo mb_strimwidth($content, 0, 200, '');  ?>
                            </div>
                         </div>
                     </div>

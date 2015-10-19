@@ -21,5 +21,7 @@
           area.animated(true,true).fadeInUp(1500);
        } 
     });
+
+    
 	
 })(jQuery);

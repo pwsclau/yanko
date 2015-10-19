@@ -6606,7 +6606,6 @@ button.close {
   animation-delay: 0.25s;
 }
 .banner .carousel-indicators {
-  margin-left: -35%;
   text-align: left;
 }
 .banner .image-holder {
@@ -7413,6 +7412,39 @@ ul#menu-main-menu > li:last-child a:hover {
   color: #2e3a5e;
   font-family: 'icomoon';
 }
+@media (max-width: 1624px) {
+  .banner .m-2 {
+    margin-left: 10% !important;
+  }
+}
+@media (max-width: 1448px) {
+  .banner .m-2 {
+    margin-left: 7% !important;
+  }
+}
+@media (max-width: 1360px) {
+  .banner .m-2 {
+    margin-left: 3% !important;
+  }
+}
+@media (max-width: 1190px) {
+  .section-areas .image-holder-prac {
+    max-height: 255px !important;
+  }
+  .section-areas .icon-bg {
+    width: 125px !important;
+    height: 125px !important;
+  }
+  .section-areas .icon-family:before,
+  .section-areas .icon-court:before,
+  .section-areas .icon-injured:before {
+    font-size: 65px !important;
+  }
+  .section-areas .overlay {
+    height: 3.75em;
+    padding: 0.5em;
+  }
+}
 @media (max-width: 1024px) {
   .search-form {
     top: -3 !important;
@@ -7500,6 +7532,52 @@ ul#menu-main-menu > li:last-child a:hover {
     padding: 0 3em !important;
   }
 }
+@media (max-width: 991px) {
+  .section-contact .left-title {
+    padding-bottom: 0 !important;
+  }
+  .section-contact .para-18,
+  .section-contact .para-16 {
+    padding: 0 4em;
+  }
+  .section-contact p {
+    margin-top: 1.5em !important;
+  }
+  .section-contact form input {
+    margin-bottom: 1em;
+  }
+  .section-contact .form-group {
+    margin-bottom: 0 !important;
+  }
+  .section-contact ul {
+    margin-top: 1em !important;
+  }
+  .section-areas .icon-bg {
+    top: 40%;
+    width: 110px;
+    height: 110px;
+  }
+  .section-areas .icon-injured:before,
+  .section-areas .icon-court:before,
+  .section-areas .icon-family:before {
+    font-size: 60px;
+  }
+  .section-areas .overlay {
+    position: relative;
+    pointer-events: none;
+    transform: none;
+    -webkit-transform: none;
+    transition: none;
+    -webkit-transition: none;
+  }
+  .section-areas .hovereffect {
+    overflow: visible;
+  }
+  .section-areas .hovereffect:hover img {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 @media (max-width: 768px) {
   .hvr-grow-shadow:active,
   .hvr-grow-shadow:focus,
@@ -7546,31 +7624,6 @@ ul#menu-main-menu > li:last-child a:hover {
   }
   .section h2 {
     font-size: 25px;
-  }
-  .section-areas .icon-bg {
-    top: 40%;
-    width: 110px;
-    height: 110px;
-  }
-  .section-areas .icon-injured:before,
-  .section-areas .icon-court:before,
-  .section-areas .icon-family:before {
-    font-size: 60px;
-  }
-  .section-areas .overlay {
-    position: relative;
-    pointer-events: none;
-    transform: none;
-    -webkit-transform: none;
-    transition: none;
-    -webkit-transition: none;
-  }
-  .section-areas .hovereffect {
-    overflow: visible;
-  }
-  .section-areas .hovereffect:hover img {
-    -webkit-transform: none;
-    transform: none;
   }
   .section-welcome {
     overflow: hidden;
@@ -7653,22 +7706,6 @@ ul#menu-main-menu > li:last-child a:hover {
     padding-bottom: 5em !important;
     padding: 10px 2em !important;
   }
-  .section-contact .para-18,
-  .section-contact .para-16 {
-    padding: 0 4em;
-  }
-  .section-contact p {
-    margin-top: 1.5em !important;
-  }
-  .section-contact form input {
-    margin-bottom: 1em;
-  }
-  .section-contact .form-group {
-    margin-bottom: 0 !important;
-  }
-  .section-contact ul {
-    margin-top: 1em !important;
-  }
   .section-team .section-desc p {
     padding: 0px 3em;
   }
@@ -7680,6 +7717,35 @@ ul#menu-main-menu > li:last-child a:hover {
   }
   .news-wrapper .entry-content {
     max-width: 48em !important;
+  }
+}
+@media (max-width: 767px) {
+  .img-lawyer-holder {
+    display: none;
+  }
+  .cline-15.is-triggered {
+    width: 10em;
+  }
+  .section-areas {
+    padding: 1em 15em !important;
+    padding-bottom: 5em !important;
+  }
+  .section-areas .image-holder-prac {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .section-areas .icon-bg {
+    top: 50%;
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .section-areas .icon-family:before,
+  .section-areas .icon-injured:before,
+  .section-areas .icon-court:before {
+    font-size: 85px !important;
+  }
+  .section-areas .section-content {
+    margin-top: 0 !important;
   }
 }
 @media (max-width: 736px) {
@@ -7727,8 +7793,8 @@ ul#menu-main-menu > li:last-child a:hover {
     padding: 10px 4em;
   }
   .section-areas .image-holder-prac {
-    margin-bottom: 5em;
-    padding: 0 15em;
+    margin-bottom: 3em;
+    padding: 0 14em;
   }
   .section-areas .image-holder-prac .icon-bg {
     top: 50%;
@@ -7739,6 +7805,9 @@ ul#menu-main-menu > li:last-child a:hover {
   .section-areas .image-holder-prac .icon-court:before,
   .section-areas .image-holder-prac .icon-family:before {
     font-size: 70px;
+  }
+  .section-areas .section-content {
+    margin-bottom: 5em !important;
   }
   .section-welcome .sec-image-holder {
     max-width: 370px !important;
@@ -7835,14 +7904,26 @@ ul#menu-main-menu > li:last-child a:hover {
   .section-contact p {
     padding: 0px 0em;
   }
+  .section-contact .line-16 {
+    margin: auto;
+  }
   .section-team {
     padding-bottom: 4em !important;
   }
   .section-team p {
     margin: 0 0 0em;
   }
+  .section-team .lawyer-wrapper {
+    padding: 0 10em;
+  }
   .section-team .lawyer-wrapper p {
-    padding: 6px 0em;
+    padding: 10px 0em !important;
+  }
+  .section-team .img-lawyer-holder {
+    display: none;
+  }
+  .section-team .lawyer-holder {
+    height: 220px !important;
   }
   .news-wrapper .post-thumbnail {
     max-width: 455px !important;
@@ -7869,7 +7950,7 @@ ul#menu-main-menu > li:last-child a:hover {
   }
   .section-areas .image-holder-prac {
     margin-top: 0px;
-    margin-bottom: 8em;
+    margin-bottom: 6em;
     padding: 0 12em;
   }
   .section-areas .cline-15 {
@@ -7878,6 +7959,9 @@ ul#menu-main-menu > li:last-child a:hover {
   .section-areas .hovereffect .overlay {
     height: 60px;
     padding: 10px;
+  }
+  .section-areas .section-content {
+    margin-top: 3em !important;
   }
   .section-post .carousel-caption {
     padding: 10px 3em;
@@ -7921,9 +8005,6 @@ ul#menu-main-menu > li:last-child a:hover {
     margin-top: 3em !important;
     height: 210px !important;
   }
-  .section-team .lawyer-holder .details-lawyer {
-    padding: 1.5em 2.5em 1.5em 2em !important;
-  }
 }
 @media (max-width: 600px) {
   .banner .carousel-title {
@@ -7933,7 +8014,8 @@ ul#menu-main-menu > li:last-child a:hover {
     font-size: 18px;
   }
   .section-areas .image-holder-prac {
-    margin-bottom: 3em;
+    margin-bottom: 6em;
+    padding: 0 10em;
   }
   .section-areas .image-holder-prac .icon-family:before,
   .section-areas .image-holder-prac .icon-court:before,
@@ -7943,7 +8025,7 @@ ul#menu-main-menu > li:last-child a:hover {
   .section-areas .image-holder-prac .icon-bg {
     width: 110px;
     height: 110px;
-    top: 43%;
+    top: 50%;
   }
   .section-areas .image-holder-prac h4 {
     font-size: 17px;
@@ -7993,6 +8075,9 @@ ul#menu-main-menu > li:last-child a:hover {
   .section-history .history-content-holder p {
     padding: 25px 0 10px 0;
   }
+  .section-history p {
+    padding: 2.5 !important;
+  }
   .subpage-banner {
     height: 220px;
   }
@@ -8025,6 +8110,14 @@ ul#menu-main-menu > li:last-child a:hover {
   }
   .section-team .lawyer-holder .btn-default {
     padding: 7px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .section-areas .image-holder-prac {
+    padding: 0 6em;
+  }
+  .section-areas .section-content {
+    margin-bottom: 3em !important;
   }
 }
 @media (max-width: 414px) {
@@ -8079,11 +8172,6 @@ ul#menu-main-menu > li:last-child a:hover {
   .section-contact p {
     padding: 0 !important;
   }
-  .section-team {
-    /*.img-lawyer-holder {
-			display: none;
-		}*/
-  }
 }
 @media (max-width: 384px) {
   .banner .carousel-title {
@@ -8121,6 +8209,9 @@ ul#menu-main-menu > li:last-child a:hover {
   }
   .banner .carousel-title {
     font-size: 40px;
+  }
+  .section-team .lawyer-holder .details-lawyer {
+    padding: 1em !important;
   }
 }
 .modal {
@@ -8185,17 +8276,10 @@ button.close {
   font-family: 'Brandon_reg';
 }
 .modal-img {
-  /*	height: 305px;
-	width: 305px;*/
   border-radius: 50%;
   background-color: #f8f8f8;
-  /*margin: 3em 14em;*/
-  border: 3px solid #e6e6e6;
   overflow: hidden;
   width: 290px;
-  /*margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 1.5em;*/
   margin: 2em auto 2em auto;
 }
 .modal-icon {
@@ -8211,6 +8295,14 @@ button.close {
   width: 100%;
   position: relative;
   padding-bottom: 7em;
+  /*.post-img-holder {
+		max-width: 480px;
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}*/
 }
 .section-post .arrows {
   font-size: 20px;
@@ -8227,49 +8319,49 @@ button.close {
   width: 100%;
   height: 200px;
 }
-.btn-post {
-  background-color: #a4aabc;
-  color: #ffffff;
-}
-.post-subtitle {
+.section-post .post-subtitle {
   letter-spacing: 1px;
   font-family: 'Brandon_reg';
 }
-/*.post-img-holder {
-	max-width: 480px;
-	width: 100%;
-
-	img {
-		width: 100%;
-	}
-}*/
-.carousel-caption {
+.section-post .carousel-caption {
   left: 0;
   top: 0.5em;
   position: relative;
   text-align: left;
   text-shadow: none;
 }
-.news-desc {
+.section-post .carousel-caption a {
+  color: #2e3a5e;
+}
+.section-post .news-desc {
   position: relative;
   top: 1.5em;
 }
-.date-wrap {
+.section-post .desc {
+  color: #696666;
+  font-family: 'Brandon_reg';
+  font-size: 20px;
+}
+.section-post .date-wrap {
   display: block;
 }
-.white-date {
+.section-post .white-date {
   padding: 5px;
   text-align: center;
   background-color: #ffffff;
   color: #696666;
   display: block;
 }
-.blue-date {
+.section-post .blue-date {
   padding: 5px;
   text-align: center;
   background-color: #2e3a5e;
   color: #ffffff;
   display: block;
+}
+.btn-post {
+  background-color: #a4aabc;
+  color: #ffffff;
 }
 .search-form {
   position: relative;
@@ -8339,6 +8431,9 @@ input[type="search"] {
 }
 .image-holder-prac .overlay {
   border: 1px solid #e5e5e7;
+}
+.image-holder-prac .overlay a {
+  text-transform: uppercase;
 }
 .section-title {
   text-align: center;
