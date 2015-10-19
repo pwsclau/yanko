@@ -49,14 +49,15 @@
         <li>
           <form role="search" method="get" class="search-form" >
               <label>
-                <i class="icon icon-search"></i> 
-                      <span class="search-tag">
-                        Search
-                      </span>
+                
+                      
                        <input type="search" 
                       class="search-field"  
                       value="">
-                      
+                      <i class="icon icon-search"></i> 
+                      <span class="search-tag">
+                        Search
+                      </span>
               </label>
               <input type="submit" class="search-submit" value="Search"> 
             </form>

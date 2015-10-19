@@ -15,6 +15,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="section-holder">
 				<h2 class = "section-title">Our Vision</h2>
+				<div class="cline-15"></div>
 				<?php 
 		          $my_postid = 68;
 		          $content_post = get_post($my_postid);
@@ -27,6 +28,7 @@ get_header(); ?>
 			<div class="section-holder m10">
 				<div class="section-title">
 					<h2>Our Mission</h2>
+					<div class="cline-15"></div>
 				</div>
 				<?php 
 		          $my_postid = 70;

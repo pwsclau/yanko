@@ -1,3 +1,5 @@
+<?php if ( have_posts() ) : ?>
+  <?php while ( have_posts() ) : the_post(); ?>
 <div class="section section-post">
    	<div class="container">
    		<div class="row">
@@ -9,7 +11,6 @@
    				</div>
 				
 				<!-- Carousel -->
-
   				<div id="news-carousel" class="carousel slide" data-ride="carousel" data-interval= "false">
 
             <div class="carousel-inner" role="listbox">
@@ -43,7 +44,7 @@
                               </div>
                              </div>
                              <div class="col-md-10 col-md-10">
-                               <h4><?php the_title(); ?></h4>
+                               <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                              </div>
                            </div>
                            <div class="desc">
@@ -78,3 +79,5 @@
    		</div>
    	</div>
    </div>
+     <?php endwhile; ?>
+<?php endif; wp_reset_query(); ?>

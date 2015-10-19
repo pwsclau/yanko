@@ -1,69 +1,92 @@
 <?php
 /*Template Name: Lawyers Page */
 get_header();?>
-  <?php if ( have_posts() ) : ?>
-  <?php while ( have_posts() ) : the_post(); ?>
-
-
-<div class="subpage-banner" style="background: #000 url('<?php echo the_field('banner_img'); ?>') no-repeat; ">
-    
-    <h1 class="heading-46 ">
-      OUR ATTORNEYS
-    </h1>
+  <div class="subpage-banner lawyers-subpg">
+    <!-- <img src="images/subpg-banner-lawyers.jpg"> -->
+    <h1 class ="heading-46">OUR ATTORNEYS</h1>
   </div>
 
-	<div class="section section-team">
-		<div class="container">
-			<div class="section-title">
-				<h2 class = "animated zoomIn">Meet The Team</h2>
-				<div class="cline-15"></div>
-			</div>
-			<div class="section-desc">
-        <?php echo the_content(); ?>
-			</div>
+  <div class="section section-team">
+    <div class="container">
+      <div class="section-title">
+        <h2 class = "animated zoomIn">Meet The Team</h2>
+        <div class="cline-15"></div>
+      </div>
+      <div class="section-desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      </div>
 
-			<div class="lawyer-wrapper">
-				<div class="row">
+      <div class="lawyer-wrapper">
+        <div class="row">
 
-					<?php
-              $ctr = 0;
-              query_posts(array(
-              'post_type' => 'post_type'
-              ));
-              if ( have_posts() ) : ?>
-                <?php while(have_posts()) : the_post(); ?>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="lawyer-holder">
+            <div class="row">
+              <div class="col-md-7 col-sm-7 col-xs-7">
+                <div class="details-lawyer">
+                  <h3>David Yanko</h3>
+                    <h4>(Founder & Managing Partner)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#lawyer_data">READ MORE</button>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-5">
+                <div class="img-lawyer-holder">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/att1.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	              <div class="col-md-6 col-sm-12 col-xs-12">
-									<div class="lawyer-holder">
-										<div class="row">
-											<div class="col-md-7 col-sm-7 col-xs-7">
-												<div class="details-lawyer">
-													<h3> <?php the_title(); ?> </h3>
-														<h4> <?php the_field('lawyer_title') ?> </h4>
-														<p> <?php the_field('lawyer_desc_summary') ?> </p>
-														<button type="button" class="btn btn-default" data-toggle="modal" data-target="#lawyer_data">READ MORE</button>
-												</div>
-											</div>
-											<div class="col-md-5 col-sm-5 col-xs-5">
-												<div class="img-lawyer-holder">
-													<!-- <img src="<?php echo $lawyer_img['url']; ?>" alt=""> -->
-													<?php the_post_thumbnail(); ?>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="lawyer-holder">
+            <div class="row">
+              <div class="col-md-7 col-sm-7 col-xs-7">
+                <div class="details-lawyer">
+                  <h3>David Yanko</h3>
+                    <h4>(Founder & Managing Partner)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <button type="button" class="btn btn-default">READ MORE</button>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-5 col-xs-5">
+                <div class="img-lawyer-holder">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/att1.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-								<?php $ctr++; endwhile; wp_reset_query(); ?>
-              <?php endif; ?>
+        <!-- <div class="col-md-6 col-sm-12 col-xs-12">
+          <div class="lawyer-holder">
+            <div class="row">
+              <div class="col-md-7 col-sm-7 col-xs-7">
+                <div class="details-lawyer">
+                  <h3>David Yanko</h3>
+                    <h4>(Founder & Managing Partner)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <button type="button" class="btn btn-default">READ MORE</button>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-5 col-xs-5">
+                <div class="img-lawyer-holder">
+                  <img src="images/att1.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
-				</div>
-			</div>
+      </div>
 
-		</div>
-	</div>
-	 <!-- Modal -->
-    <div class="modal fade" id="lawyer_data" tabindex="-1" role="dialog" aria-labelledby="lawyer-modal-label">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="lawyer_data" tabindex="-1" role="dialog" aria-labelledby="lawyer-modal-label">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -119,7 +142,5 @@ get_header();?>
       </div>
     </div>
 
-    <?php endwhile; ?>
-<?php endif; wp_reset_query(); ?>
 <?php include ('post-section.php'); ?>
 <?php get_footer(); ?>

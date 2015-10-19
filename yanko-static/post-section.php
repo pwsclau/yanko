@@ -31,7 +31,7 @@
                         </div>
                        </div>
                        <div class="col-md-10 col-md-10">
-                         <h4>Freda Vanopoulos is co-hosting upcoming auto insurance seminar</h4>
+                         <h4><a href="single-news.php">Freda Vanopoulos is co-hosting upcoming auto insurance seminar</a></h4>
                        </div>
                      </div>
                      <div class="desc">
@@ -60,7 +60,7 @@
                       </div>
                     </div>
                     <div class="col-md-10 col-sm10">
-                      <h4>Freda Vanopoulos is co-hosting upcoming auto insurance seminar</h4>
+                      <h4><a href="single-news.php">Freda Vanopoulos is co-hosting upcoming auto insurance seminar</a></h4>
                     </div>
                   </div>
                   <div class="desc">
