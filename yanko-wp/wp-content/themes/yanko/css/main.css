@@ -6932,6 +6932,9 @@ img{
 .footer .gray-er {
   color: #404244;
 }
+.footer .contact-number-list li {
+  font-size: 16px;
+}
 .p5-left-right {
   padding: 0 5.5em;
 }
@@ -7422,9 +7425,42 @@ ul#menu-main-menu > li:last-child a:hover {
     margin-left: 7% !important;
   }
 }
-@media (max-width: 1360px) {
-  .banner .m-2 {
-    margin-left: 3% !important;
+/*@media (max-width: 1360px) and (min-width: ) {
+	.banner {
+		.m-2 {
+			margin-left: 3% !important;
+		}
+	}
+}*/
+@media (max-width: 1370px) and (min-width: 1025px) {
+  .banner {
+    max-height: 545px;
+  }
+  .banner .btn-info {
+    margin-top: 1em;
+  }
+  .banner .image-holder {
+    margin-top: 3em;
+    max-width: 397px;
+  }
+  .banner .carousel-caption {
+    padding-top: 3em;
+  }
+  .banner .carousel-title {
+    font-size: 65px;
+  }
+  .banner .carousel-indicators {
+    left: 46%;
+  }
+}
+@media (max-width: 991px) and (min-width: 769px) {
+  .banner .image-holder {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  .banner .carousel-indicators {
+    display: none;
   }
 }
 @media (max-width: 1190px) {
@@ -7532,6 +7568,17 @@ ul#menu-main-menu > li:last-child a:hover {
     padding: 0 3em !important;
   }
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .m-2 {
+    margin-left: 0% !important;
+  }
+  .banner .carousel-caption {
+    left: 8%;
+  }
+  .banner .carousel-caption p {
+    max-width: 30em;
+  }
+}
 @media (max-width: 991px) {
   .section-contact .left-title {
     padding-bottom: 0 !important;
@@ -7611,7 +7658,7 @@ ul#menu-main-menu > li:last-child a:hover {
     padding: 4em;
     bottom: 2px;
     top: 0;
-    left: 0;
+    left: -25px;
   }
   .banner .carousel-indicators {
     display: none;
@@ -7776,6 +7823,7 @@ ul#menu-main-menu > li:last-child a:hover {
   }
   .banner .carousel-caption {
     padding: 1em 0 2em 0;
+    left: 0;
   }
   .banner .carousel-caption p {
     padding: 0 5em;
@@ -8282,16 +8330,27 @@ button.close {
   width: 290px;
   margin: 2em auto 2em auto;
 }
+.modal-img img {
+  width: 100%;
+  height: auto;
+}
 .modal-icon {
   background: #000 url('../images/david4.png') no-repeat;
   width: 100%;
   min-height: 300px;
   background-position: center !important;
 }
+/* Required */
+.hidden {
+  opacity: 0;
+}
+.visible {
+  opacity: 1;
+}
 .section-post {
   background: url('../images/post-sec-bg.jpg') no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   width: 100%;
   position: relative;
   padding-bottom: 7em;
@@ -8659,6 +8718,9 @@ input[type="search"] {
 .section-contact .form-wrapper {
   margin-top: 3em;
 }
+.section-contact ul.contact-number-list {
+  margin-top: 0em !important;
+}
 .section-vismis {
   padding-top: 3em !important;
   padding-bottom: 5em;
@@ -8747,4 +8809,24 @@ input[type="search"] {
 .news-wrapper .post-navigation .nav-previous .meta-nav,
 .news-wrapper .post-navigation .nav-next .meta-nav {
   display: none;
+}
+.section-testimonials {
+  background: #F6F6F6;
+}
+.section-testimonials .testimonial-holder {
+  height: 300px;
+  padding: 20px;
+  background-color: #404244;
+}
+.section-testimonials .testimonial-holder p,
+.section-testimonials .testimonial-holder h4,
+.section-testimonials .testimonial-holder h3 {
+  color: #ffffff;
+}
+.section-testimonials .testimonial-holder .img-testimonial-holder {
+  width: 100%;
+  height: 230px;
+}
+.section-testimonials .section-title {
+  margin-bottom: 1.5em;
 }

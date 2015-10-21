@@ -87,7 +87,7 @@ get_header(); ?>
 				<div class="cline-15"></div>
    		</div>
 
-   		<div class="section-content ">
+   		<div class="section-content">
    			<div class="row">
           
      				<div class="col-xs-12 col-sm-4 col-md-4">
@@ -139,10 +139,7 @@ get_header(); ?>
    			<div class="row">
    				<div class="col-md-6 col-sm-6 col-xs-12">
    					<div class="sec-image-holder">
-
               <?php echo get_the_post_thumbnail(54); ?>
-  
-
    					</div>
    				</div>
    				<div class="col-md-6 col-sm-6 col-xs-12 left-padd-5">
@@ -156,7 +153,6 @@ get_header(); ?>
                 <?php 
                   $content_post = get_post(54);
                   $content = $content_post->post_content;
-                  // $content = apply_filters('content_title', $content);
                   $content = str_replace(']]>', ']]&gt;', $content);
                   echo $content;
                 ?>

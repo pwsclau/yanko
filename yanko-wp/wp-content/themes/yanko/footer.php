@@ -9,7 +9,8 @@
  * @since Twenty Fifteen 1.0
  */
 ?>
-
+  <?php if ( have_posts() ) : ?>
+  <?php while ( have_posts() ) : the_post(); ?>
 	<div class="footer">
       <div class="container">
         <div class="row p5-left-right">
@@ -17,24 +18,24 @@
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="footer-details">
               <h4>AREAS OF PRACTICE</h4>
-              <ul>
-                <li><a href="area-of-practice.php">Personal Injury</a></li>
-                <li><a href="area-of-practice.php">Criminal Law</a></li>
-                <li><a href="area-of-practice.php">Family Law</a></li>
-              </ul>
+
+               <?php 
+                  wp_nav_menu( array(
+                    'menu'            => 'areas-of-practice'
+                  ));
+                ?>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="footer-details">
               <h4>QUICK LINKS</h4>
-              <ul>
-                <li><a href="">About us</a></li>
-                <li> <a href="lawyers.php">Lawyers</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="contact-us.php">Contact us</a></li>
-              </ul>
+
+                <?php 
+                  wp_nav_menu( array(
+                    'menu'            => 'quick-links',
+                    ));
+                  ?>
             </div>
           </div>
 
@@ -44,7 +45,7 @@
               <div class="footer-details">
                 <h4>OUR LOCATION</h4>
                 <i class="fa fa-map-marker"></i>
-                <span class = "ml-10">Suite 301, 300 Manning Road N.E. Calgary, Alberta T2E 8K4</span>
+                <span class = "ml-10"><?php echo get_field('address', 135) ?></span>
               </div>
             </div>
 
@@ -53,12 +54,20 @@
                  <h4>CONTACT INFO</h4>
                 <div class="mail">
                   <i class="fa fa-envelope-o"></i>
-                  <span class = "ml-10">yanko&popovic@yplaw.com</span>
+                  <span class = "ml-10"><?php echo get_field('email_address', 135) ?></span>
                 </div>
                 <div class="tele">
                   <i class="fa fa-phone"></i>
-                  <span class = "ml-10">403.262.0262</span>
-                  <p class = "ml-27"> 403.204.0284</p>
+                  <ul class="contact-number-list">
+                    <?php 
+                      if( have_rows('phone_numbers', 135) ): 
+                        while( have_rows('phone_numbers', 135) ): the_row();
+                        $number= get_sub_field('phone_number');
+                    ?>
+                        <li><?php echo $number ?></li>
+                      <?php endwhile; ?>
+                    <?php endif; ?>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -68,13 +77,13 @@
             <h4>SOCIAL MEDIA</h4>
               <ul class = "sm-list">
                 <li>
-                  <a href="#"><i class="fa fa-facebook sm-links gray-er"></i></a>
+                  <a href="<?php echo get_field('facebook_link', 116) ?>"><i class="fa fa-facebook sm-links gray-er"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-twitter sm-links gray-er"></i></a>
+                  <a href="<?php echo get_field('twitter_link', 116) ?>"><i class="fa fa-twitter sm-links gray-er"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-linkedin-square sm-links gray-er"></i></a>
+                  <a href="<?php echo get_field('linked_in_link', 116) ?>"><i class="fa fa-linkedin-square sm-links gray-er"></i></a>
                 </li>
               </ul>
           </div>
@@ -90,12 +99,16 @@
       </div>
       
     </div>
+    <?php endwhile; ?>
+  <?php endif; wp_reset_query(); ?>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 
 <?php wp_footer(); ?>
+
+
 
 </body>
 </html>

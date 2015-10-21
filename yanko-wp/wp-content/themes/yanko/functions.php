@@ -258,10 +258,12 @@ function twentyfifteen_scripts() {
 	wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/css/animate.min.css');
 	wp_enqueue_style( 'hover-buttons-css', get_template_directory_uri() . '/css/hover-buttons/hover-min.css');
 
-
+	
+	wp_enqueue_script( 'jquery-min', get_template_directory_uri() . '/js/jquery-1.11.3.min.js', array( 'jquery' ), '4657656', true );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '4657658', true );
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array( 'jquery' ), '5343634', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '5754745', true );
+	wp_enqueue_script( 'viewportchecker', get_template_directory_uri() . '/js/viewportchecker.js', array( 'jquery' ), '5754747', true );
 
 	//YANKO END THEME
 
@@ -437,4 +439,40 @@ function custom_post_lawyers() {
     register_post_type( 'lawyer', $args ); 
   }
   add_action( 'init', 'custom_post_lawyers' );
+
+  ///////POST-TYPES TESTIMONIALS 
+function custom_post_testimonials() {
+    $labels = array(
+      'name'               => _x( 'Testimonials', 'post type general name' ),
+      'singular_name'      => _x( 'Testimonial', 'post type singular name' ),
+      'add_new'            => _x( 'Add New', 'Testimonial' ),
+      'add_new_item'       => __( 'Add New Testimonial' ),
+      'edit_item'          => __( 'Edit Testimonial' ),
+      'new_item'           => __( 'New Testimonial' ),
+      'all_items'          => __( 'All Testimonials' ),
+      'view_item'          => __( 'View Testimonial' ),
+      'search_items'       => __( 'Search Testimonial' ),
+      'not_found'          => __( 'No Testimonial found' ),
+      'not_found_in_trash' => __( 'No Testimonial found in the Trash' ), 
+      'parent_item_colon'  => '',
+      'menu_name'          => 'Testimonials'
+    );
+    $args = array(
+
+    	'labels'        => $labels,
+        'description'   => 'Holds our Testimonial specific data.',
+        'public'        => true,
+        'menu_position' => 5,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+        'has_archive'   => true,    
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'testimonial', 'with_front' => true),
+        'capability_type' => 'post',
+        'hierarchical' => false,
+    );
+    register_post_type( 'testimonial', $args ); 
+  }
+  add_action( 'init', 'custom_post_testimonials' );
 

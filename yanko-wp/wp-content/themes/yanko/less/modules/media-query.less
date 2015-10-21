@@ -12,10 +12,46 @@
 		}
 	}
 }
-@media (max-width: 1360px) {
+/*@media (max-width: 1360px) and (min-width: ) {
 	.banner {
 		.m-2 {
 			margin-left: 3% !important;
+		}
+	}
+}*/
+
+@media (max-width: 1370px) and (min-width: 1025px){
+	.banner {
+		max-height: 545px;
+		.btn-info {
+			margin-top: 1em;
+		}
+		.image-holder {
+			margin-top: 3em;
+			max-width: 397px;
+		}
+		.carousel-caption {
+			padding-top: 3em;
+		}
+		.carousel-title {
+			font-size: 65px;
+		}
+		.carousel-indicators {
+			left: 46%;
+		}
+	}
+}
+@media (max-width: 991px) and (min-width: 769px) {
+	.banner {
+		.image-holder {
+			display: none;
+		}
+	}
+}
+@media(max-width: 1199px) {
+	.banner {
+		.carousel-indicators {
+			display: none;
 		}
 	}
 }
@@ -133,6 +169,20 @@
 	}
 }
 
+@media (max-width: 991px) and (min-width: 768px) {
+	.m-2 {
+		margin-left: 0% !important;
+	}
+	.banner {
+		.carousel-caption {
+			left: 8%;
+			p {
+				max-width: 30em;
+			}
+		}
+	}
+}
+
 @media (max-width: 991px) {
 	.section-contact {
 		.left-title {
@@ -220,7 +270,7 @@
 			padding: 4em;
 			bottom: 2px;
 			top: 0;
-			left: 0;
+			left: -25px;
 		}
 		.carousel-indicators {
 			display: none;
@@ -373,6 +423,9 @@
 			margin-top: 0 !important;
 		}
 	}
+	.banner {
+
+	}
 }
 
 @media (max-width: 736px) {
@@ -404,7 +457,7 @@
 		}
 		.carousel-caption {
 			padding: 1em 0 2em 0;
-			
+			left: 0;
 			p{
 				padding: 0 5em;
 			}
