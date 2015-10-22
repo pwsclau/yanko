@@ -476,3 +476,62 @@ function custom_post_testimonials() {
   }
   add_action( 'init', 'custom_post_testimonials' );
 
+    ///////POST-TYPES TESTIMONIALS 
+function custom_post_blogs() {
+    $labels = array(
+      'name'               => _x( 'Blogs', 'post type general name' ),
+      'singular_name'      => _x( 'Blog', 'post type singular name' ),
+      'add_new'            => _x( 'Add New', 'Blog' ),
+      'add_new_item'       => __( 'Add New Blog' ),
+      'edit_item'          => __( 'Edit Blog' ),
+      'new_item'           => __( 'New Blog' ),
+      'all_items'          => __( 'All Blogs' ),
+      'view_item'          => __( 'View Blog' ),
+      'search_items'       => __( 'Search Blog' ),
+      'not_found'          => __( 'No Blog found' ),
+      'not_found_in_trash' => __( 'No Blog found in the Trash' ), 
+      'parent_item_colon'  => '',
+      'menu_name'          => 'Blogs'
+    );
+    $args = array(
+
+    	'labels'        => $labels,
+        'description'   => 'Holds our Blog specific data.',
+        'public'        => true,
+        'menu_position' => 5,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+        'has_archive'   => true,    
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'blog', 'with_front' => true),
+        'capability_type' => 'post',
+        'hierarchical' => false,
+    );
+    register_post_type( 'blog', $args ); 
+  }
+  add_action( 'init', 'custom_post_blogs' );
+
+  // THEME OPTIONS
+
+if ( !function_exists( 'optionsframework_init' ) ) {
+  define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/' );
+  require_once dirname( __FILE__ ) . '/inc/options-framework.php';
+}
+
+function get_theme_options( $option ) {
+	$optionsframework_settings = get_option( 'optionsframework' );
+
+	// Gets the unique option id
+	if ( isset( $optionsframework_settings['id'] ) ) {
+		$option_name = $optionsframework_settings['id'];
+	} else {
+		$option_name = 'options_framework_theme';
+	}
+
+	$settings = get_option($option_name);
+
+	return isset( $settings[$option] ) ?  $settings[$option] : '';
+   
+}
+

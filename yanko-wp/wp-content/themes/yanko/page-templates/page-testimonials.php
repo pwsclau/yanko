@@ -8,11 +8,14 @@ query_posts(array(
 ));
 if ( have_posts() ) : ?>
 
-
+<div class="subpage-banner" style="background: url('<?php echo the_field('banner_img'); ?>') no-repeat; ">
+  <h1 class="heading-46 ">
+    Testimonials
+  </h1>
+</div>
 	<div class="section section-testimonials">
 		<div class="container">
-			<h2 class="section-title">Testimonials</h2>
-		<div class="row">
+		  <div class="row">
 			 <?php
           $cntr=0;
           while(have_posts()) : the_post(); ?>
@@ -28,7 +31,7 @@ if ( have_posts() ) : ?>
                         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#<?php echo $cntr;?>">READ MORE</button>
                     </div>
                   </div>
-                  <div class="col-md-5 col-sm-5 col-xs-5">
+                <div class="col-md-5 col-sm-5 col-xs-5">
                   <?php
                         global $post;
                         $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false, '' );
@@ -39,8 +42,8 @@ if ( have_posts() ) : ?>
                 </div>
               </div>
             </div>
-          <?php $cntr++; endwhile;?>
-		</div>
+        <?php $cntr++; endwhile;?>
+		  </div>
 		</div>
 			
 	</div>  

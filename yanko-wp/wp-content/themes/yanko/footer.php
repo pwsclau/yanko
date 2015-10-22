@@ -30,7 +30,6 @@
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="footer-details">
               <h4>QUICK LINKS</h4>
-
                 <?php 
                   wp_nav_menu( array(
                     'menu'            => 'quick-links',
@@ -45,30 +44,71 @@
               <div class="footer-details">
                 <h4>OUR LOCATION</h4>
                 <i class="fa fa-map-marker"></i>
-                <span class = "ml-10"><?php echo get_field('address', 135) ?></span>
+
+                <?php if(of_get_option('address', '')){?>
+                  <span class="ml-10">
+                    <a href="<?php echo of_get_option('address', '');  ?>" target="_blank"><?php echo of_get_option('address', '');  ?></a>
+                  </span>
+                <?php } ?>
+
+               
               </div>
             </div>
 
             <div class="contact-info">
               <div class="footer-details">
                  <h4>CONTACT INFO</h4>
-                <div class="mail">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class = "ml-10"><?php echo get_field('email_address', 135) ?></span>
-                </div>
-                <div class="tele">
-                  <i class="fa fa-phone"></i>
-                  <ul class="contact-number-list">
-                    <?php 
-                      if( have_rows('phone_numbers', 135) ): 
-                        while( have_rows('phone_numbers', 135) ): the_row();
-                        $number= get_sub_field('phone_number');
-                    ?>
-                        <li><?php echo $number ?></li>
-                      <?php endwhile; ?>
-                    <?php endif; ?>
+                
+                <ul>
+                  <li>
+                    <i class="fa fa-envelope-o"></i>
+                   <?php if(of_get_option('email', '')){?>
+                      <span class="ml-10">
+                        <a href="mailto:<?php echo of_get_option('email', '');  ?>" target="_blank"><?php echo of_get_option('email', '');  ?></a>
+                      </span>
+                    <?php } ?>
+                  </li>
+                  <li>
+                    <ul class="contact-number-list">
+                    
+                    <?php if(of_get_option('telephone', '')){?>
+                      <li>
+                        <i class="fa fa-phone"></i>&nbsp;<a href="tel:<?php echo of_get_option('telephone', '');  ?>" target="_blank"><?php echo of_get_option('telephone', '');  ?></a>
+                      </li>
+                    <?php } ?>
+                    <?php if(of_get_option('faxnumber', '')){?>
+                      <li>
+                        <a href="tel:<?php echo of_get_option('faxnumber', '');  ?>" target="_blank"><?php echo of_get_option('faxnumber', '');  ?></a>
+                      </li>
+                   <?php } ?>
                   </ul>
-                </div>
+                  </li>
+                </ul>
+
+                <!-- <div class="mail">
+                  <i class="fa fa-envelope-o"></i>
+                   <?php if(of_get_option('email', '')){?>
+                      <span class="ml-10">
+                        <a href="mailto:<?php echo of_get_option('email', '');  ?>" target="_blank"><?php echo of_get_option('email', '');  ?></a>
+                      </span>
+                    <?php } ?>
+                </div> -->
+               <!--  <div class="tele">
+                  
+                  <ul class="contact-number-list">
+                    <i class="fa fa-phone"></i>
+                    <?php if(of_get_option('telephone', '')){?>
+                      <li>
+                        <a href="tel:<?php echo of_get_option('telephone', '');  ?>" target="_blank"><?php echo of_get_option('telephone', '');  ?></a>
+                      </li>
+                    <?php } ?>
+                    <?php if(of_get_option('faxnumber', '')){?>
+                      <li>
+                        <a href="tel:<?php echo of_get_option('faxnumber', '');  ?>" target="_blank"><?php echo of_get_option('faxnumber', '');  ?></a>
+                      </li>
+                   <?php } ?>
+                  </ul>
+                </div> -->
               </div>
             </div>
           </div>
@@ -76,15 +116,23 @@
           <div class="col-md-3 col-sm-3 col-xs-12">
             <h4>SOCIAL MEDIA</h4>
               <ul class = "sm-list">
-                <li>
-                  <a href="<?php echo get_field('facebook_link', 116) ?>"><i class="fa fa-facebook sm-links gray-er"></i></a>
-                </li>
-                <li>
-                  <a href="<?php echo get_field('twitter_link', 116) ?>"><i class="fa fa-twitter sm-links gray-er"></i></a>
-                </li>
-                <li>
-                  <a href="<?php echo get_field('linked_in_link', 116) ?>"><i class="fa fa-linkedin-square sm-links gray-er"></i></a>
-                </li>
+
+                <?php if(of_get_option('facebook', '')){?>
+                  <li>
+                    <a href="<?php echo of_get_option('facebook', '');  ?>" target="_blank"><i class="fa fa-facebook sm-links gray-er"></i></a>
+                  </li>
+                 <?php } ?>
+                
+                <?php if(of_get_option('twitter', '')){?>
+                  <li>
+                    <a href="<?php echo of_get_option('twitter', '');  ?>" target="_blank"><i class="fa fa-twitter sm-links gray-er"></i></a>
+                  </li>
+                 <?php } ?>
+                <?php if(of_get_option('linkedin', '')){?>
+                  <li>
+                    <a href="<?php echo of_get_option('linkedin', '');  ?>" target="_blank"><i class="fa fa-linkedin-square sm-links gray-er"></i></a>
+                  </li>
+                <?php } ?>
               </ul>
           </div>
         </div>

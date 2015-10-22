@@ -5,6 +5,10 @@
 	border: none;
 	margin-bottom: 10px;
 	font-family: 'brandon_med';
+
+	.fa-phone, .fa-fax {
+		display: none;
+	}
 	
 	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;
@@ -41,7 +45,7 @@
 	margin-top: 7px;
 }
 
-/*.navbar-right {
+.navbar-right {
 	.btn {
 		border: 2px solid #62666e;
 	}
@@ -51,7 +55,7 @@
 	}
 
 	.btn-info {
-		padding: 1em 3em;
+		padding: 0em 2em;
 		background-color: #ffffff;
 		overflow: hidden;
 
@@ -82,7 +86,18 @@
 			top: -7px;
 		}
 	}
-}*/
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	background-color: @darkblue;
+}
+.dropdown-menu > li > a {
+	padding: 5px 28px;
+
+	&:first-child {
+		margin-top: 10px;
+	}
+}
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -91,7 +106,7 @@
   background-color: transparent;
 }
 
-ul#menu-main-menu {
+/*ul#menu-main-menu {
 	>li:last-child {
 			a {
 				border: 2px solid #62666e;
@@ -111,6 +126,14 @@ ul#menu-main-menu {
 				}
 			}
 		}
+}*/
+.hide-li {
+	a {
+		cursor: text;
+		&:hover {
+			color: #777 !important;
+		}
+	}
 }
 
 

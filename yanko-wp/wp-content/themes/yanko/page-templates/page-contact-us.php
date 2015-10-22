@@ -32,27 +32,33 @@ get_header(); ?>
 						<ul>
 							<li>
 								<i class="fa fa-map-marker"></i>
-								<span>
-									<?php echo get_field('address', 12) ?>
-								</span>
+								<?php if(of_get_option('address', '')){?>
+                  <span class="ml-10">
+                    <a href="<?php echo of_get_option('address', '');  ?>" target="_blank"><?php echo of_get_option('address', '');  ?></a>
+                  </span>
+                <?php } ?>
 							</li>
 							<li>
 								<i class="fa fa-envelope-o"></i>
-								<span>
-									<?php echo get_field('email_address', 12) ?>
-								</span>
+								<?php if(of_get_option('email', '')){?>
+                  <span class="ml-10">
+                    <a href="mailto:<?php echo of_get_option('email', '');  ?>" target="_blank"><?php echo of_get_option('email', '');  ?></a>
+                  </span>
+                <?php } ?>
 							</li>
 							<li>
 								<i class="fa fa-phone"></i>
 								<ul class="contact-number-list">
-									<?php 
-		                if( have_rows('phone_numbers') ): 
-		                  while( have_rows('phone_numbers') ): the_row();
-		                  $number= get_sub_field('phone_number');
-		              ?>
-		                  <li><?php echo $number ?></li>
-		                <?php endwhile; ?>
-		              <?php endif; ?>
+									<?php if(of_get_option('telephone', '')){?>
+                    <li>
+                      <a href="tel:<?php echo of_get_option('telephone', '');  ?>" target="_blank"><?php echo of_get_option('telephone', '');  ?></a>
+                    </li>
+                  <?php } ?>
+                  <?php if(of_get_option('faxnumber', '')){?>
+                        <li>
+                          <a href="tel:<?php echo of_get_option('faxnumber', '');  ?>" target="_blank"><?php echo of_get_option('faxnumber', '');  ?></a>
+                        </li>
+                     <?php } ?>
 								</ul>
 								
 							</li>
@@ -61,11 +67,6 @@ get_header(); ?>
 				</div>
 		</div>
 	</div>
-
-	<!-- <div class="location-map" id="googleMap">
-		
-	</div> -->
-	<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.9320721597815!2d-114.01865144851608!3d51.0543420514475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717acb148f1ec7%3A0x9be97e34df7de505!2s300+Manning+Rd+NE+%23301%2C+Calgary%2C+AB+T2E+8K4%2C+Canada!5e0!3m2!1sen!2sph!4v1445390247584" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 	<iframe src="<?php echo get_field('google_map',12) ?>" width="100%" height="450"  frameborder="0" style="border:0" allowfullscreen></iframe>
 	<?php endwhile; ?>
 <?php endif; wp_reset_query(); ?>

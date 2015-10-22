@@ -40,7 +40,7 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand large" href=""><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg"></a>
+        <a class="navbar-brand large" href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg"></a>
 
         <a href="index.php" class="navbar-brand mini"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-mini.png" alt=""></a>
       </div>
@@ -49,21 +49,20 @@
         <li>
           <form role="search" method="get" class="search-form" >
               <label>
-                
-                      
-                       <input type="search" 
+                <input type="search" 
                       class="search-field"  
                       value="">
-                      <i class="icon icon-search"></i> 
-                      <span class="search-tag">
-                        Search
-                      </span>
+                      &nbsp;&nbsp;
+                <i class="icon icon-search"></i> 
+                <span class="search-tag">
+                  &nbsp;Search
+                </span>
               </label>
               <input type="submit" class="search-submit" value="Search"> 
             </form>
         </li>
-          <li><a href="#">T: 403.262.0262</a></li>
-          <li><a href="#">F: 403.204.0284</a></li>
+        <li class="hide-li"><a href="#"><i class="fa fa-phone"></i>T: 403.262.0262</a></li>
+        <li class="hide-li"><a href="#"><i class="fa fa-fax"></i>F: 403.204.0284</a></li>
         </ul>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -71,36 +70,13 @@
 
          <?php 
         wp_nav_menu( array(
-                'menu'            => 'main-menu',
-                'theme_location'  => 'primary-menu',
-                'menu_class'      => 'nav navbar-nav navbar-right lower-nav',
-                'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
-                'walker'          => new wp_bootstrap_navwalker()
-                ));
+          'menu'            => 'main-menu',
+          'theme_location'  => 'primary-menu',
+          'menu_class'      => 'nav navbar-nav navbar-right lower-nav',
+          'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
+          'walker'          => new wp_bootstrap_navwalker()
+          ));
         ?>
-
-
-      <!--   <ul class="nav navbar-nav navbar-right lower-nav">
-          <li><a href="index.php">HOME</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT US<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="history.php">HISTORY</a></li>
-              <li><a href="vision-mission.php">VISION & MISSION</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AREAS OF PRACTICE<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="area-of-practice.php">PERSONAL INJURY</a></li>
-              <li><a href="area-of-practice.php">CRIMINAL LAW</a></li>
-              <li><a href="area-of-practice.php">FAMILY LAW</a></li>
-            </ul>
-          </li>
-          <li><a href="lawyers.php">LAWYERS</a></li>
-          <li class="hvr-grow-shadow"><a href="contact-us.php" class="btn btn-info btn-infoc icon-arrow-right" role="button">CONTACT US </a></li>
-        </ul> -->
-        
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

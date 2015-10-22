@@ -30,11 +30,11 @@ get_header(); ?>
 						<div class="line-16-left"></div>
 					</div>
 					<ul class="list-icon">
-						<li><a href="#">David Yanko</a></li>
-						<li><a href="#">Brad Popovic</a></li>
-						<li><a href="#">Helmut Ehms</a></li>
-						<li><a href="#">Herman Sidhu</a></li>
-						<li><a href="#">James Uniacke</a></li>
+						<li><a href="<?php echo get_post_permalink(8); ?>">David Yanko</a></li>
+						<li><a href="<?php echo get_post_permalink(8); ?>">Brad Popovic</a></li>
+						<li><a href="<?php echo get_post_permalink(8); ?>">Helmut Ehms</a></li>
+						<li><a href="<?php echo get_post_permalink(8); ?>">Herman Sidhu</a></li>
+						<li><a href="<?php echo get_post_permalink(8); ?>">James Uniacke</a></li>
 					</ul>
 				</div>
 			</div>
