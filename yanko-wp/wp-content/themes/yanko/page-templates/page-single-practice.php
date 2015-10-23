@@ -12,8 +12,8 @@ get_header(); ?>
 		</h1>
 	</div>
 
-	<div class="section section-practice">
-		<div class="container">
+	<div class="section section-practice animated fadeIn">
+		<div id="single-practice" class="container">
 			<div class="row">
 				<div class="col-md-8">
 					<div class="section-title">

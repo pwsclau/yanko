@@ -55,34 +55,6 @@ function optionsframework_options() {
 
 	$options = array();
 
-	// $options[] = array(
-	// 	'name' => __('General Options', 'options_framework_theme'),
-	// 	'type' => 'heading');
-
-	// $options[] = array(
-	// 	'name' => __('Banner', 'options_framework_theme'),
-	// 	'desc' => sprintf( __( 'Place the link of your banner here.', 'options_framework_theme' )),
-	// 	'id' => 'banner',
-	// 	'type' => 'text',
-	// 	'settings' => $wp_editor_settings );
-
-	// $options[] = array(
-	// 	'name' => __('Logo Image', 'options_framework_theme'),
-	// 	'desc' => __('Upload your custom logo', 'options_framework_theme'),
-	// 	'id' => 'branding',
-	// 	'type' => 'upload');
-
-	// $options[] = array(
-	// 	'name' => __('Introduction', 'options_framework_theme'),
-	// 	'desc' => sprintf( __( 'Introduction part.', 'options_framework_theme' )),
-	// 	'id' => 'intro',
-	// 	'type' => 'editor',
-	// 	'settings' => '$wp_editor_settings' );
-
-	// $options[] = array(
-	// 	'name' => __('Header', 'options_framework_theme'),
-	// 	'type' => 'heading' );
-
 	// Header
 
 	$options[] = array(
@@ -100,34 +72,16 @@ function optionsframework_options() {
 		'desc' => __('Enter telephone number', 'options_framework_theme'),
 		'id' => 'telnumber',
 		'type' => 'text');
+	$options[] = array(
+		'name' => __('Fax', 'options_framework_theme'),
+		'desc' => __('Enter fax number', 'options_framework_theme'),
+		'id' => 'fax_number',
+		'type' => 'text');
 
-	// Contact Details
-
-	// $options[] = array(
-	// 	'name' => __('Contact Details', 'options_framework_theme'),
-	// 	'type' => 'heading' );
-
-	// $options[] = array(
-	// 	'name' => __('Address', 'options_framework_theme'),
-	// 	'desc' => __('Enter address', 'options_framework_theme'),
-	// 	'id' => 'address',
-	// 	'type' => 'textarea');
-
-	// $options[] = array(
-	// 	'name' => __('Telephone', 'options_framework_theme'),
-	// 	'desc' => __('Enter telephone number', 'options_framework_theme'),
-	// 	'id' => 'telnumber',
-	// 	'type' => 'text');
-	// $options[] = array(
-	// 	'name' => __('Email Address', 'options_framework_theme'),
-	// 	'desc' => __('Enter email address', 'options_framework_theme'),
-	// 	'id' => 'email',
-	// 	'type' => 'text');
-
-	// Footer
+	// FOOTER AND CONTACT US
 
 	$options[] = array(
-		'name' => __('Footer', 'options_framework_theme'),
+		'name' => __('Contact Details', 'options_framework_theme'),
 		'type' => 'heading' );
 	$options[] = array(
 		'name' => __('Address', 'options_framework_theme'),
@@ -152,18 +106,11 @@ function optionsframework_options() {
 		'desc' => __('Enter fax number', 'options_framework_theme'),
 		'id' => 'faxnumber',
 		'type' => 'text');
-	$options[] = array(
-		'name' => __('Map', 'options_framework_theme'),
-		'desc' => __('Enter map address', 'options_framework_theme'),
-		'id' => 'map',
-		'std' => '',
-		'type' => 'text');
-
 	
 	//Social Media
 
 	$options[] = array(
-		'name' => __('Social Media Footer', 'options_framework_theme'),
+		'name' => __('Social Media', 'options_framework_theme'),
 		'type' => 'heading' );
 
 	$options[] = array(
@@ -181,25 +128,11 @@ function optionsframework_options() {
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Youtube', 'options_framework_theme'),
-		// 'desc' => __('Capture and Share the Worlds Moments. Instagram is a fast, beautiful and fun way to share your life with friends and family.S', 'options_framework_theme'),
-		'id' => 'youtube',
-		'std' => '',
-		'type' => 'text');
-
-	$options[] = array(
 		'name' => __('Linkedin', 'options_framework_theme'),
 		// 'desc' => __('Capture and Share the Worlds Moments. Pinterest is a fast, beautiful and fun way to share your life with friends and family', 'options_framework_theme'),
 		'id' => 'linkedin',
 		'std' => '',
 		'type' => 'text');
-
-	// $options[] = array(
-	// 	'name' => __('Social Content', 'options_framework_theme'),
-	// 	'desc' => __('Enter Social Content Bottom', 'options_framework_theme'),
-	// 	'id' => 'social-content',
-	// 	'std' => '',
-	// 	'type' => 'text');
 
 
 	return $options;

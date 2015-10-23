@@ -44,13 +44,15 @@
 
 
 .t-sidebar a:hover {
-	background: #15987D;
+	/*background: #15987D;*/
+	background: #0073AA;
 	border: 0;
 	color: #fff;
 }
 
 .t-sidebar a.nav-tab-active {
-	background: #15987D;
+	/*background: #15987D;*/
+	background: #0073AA;
 	color: #fff;
 }
 

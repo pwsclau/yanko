@@ -21,11 +21,11 @@ get_header(); ?>
           <div class="container p-0 m-2">
             <div class="col-md-6 col-xs-12">
               <div class="carousel-caption">
-                <h1 class= "carousel-title animated pulse">
+                <h1 id="banner-title"class= "carousel-title animated pulse">
                   <?php echo the_field('content_title'); ?>
                 </h1>
 
-                <div class="banner-content animated slideInLeft">
+                <div id="banner-desc"class="banner-content animated slideInLeft">
                   <?php the_content(); ?>
 
                 <a href="contact-us.php" class="btn btn-info hvr-grow-shadow" role="button">Learn More <i class="fa fa-long-arrow-right"></i></a>
@@ -157,8 +157,7 @@ get_header(); ?>
                   echo $content;
                 ?>
    						</p>
-   						<a class="btn btn-default btn-about btn-aboutc icon-arrow-right" href="history.php" role="button">About Us   <!--  <i class="fa fa-long-arrow-right"></i> -->
-              </a>
+   						<a class="btn btn-default btn-about btn-aboutc icon-arrow-right" href="history.php" role="button">About Us</a>
    					</div>
    				</div>
    			</div>

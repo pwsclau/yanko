@@ -8,6 +8,12 @@ textarea#message {
 	-webkit-box-shadow: none;
 	-moz--box-shadow: none;
 }
+textarea#case {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz--box-shadow: none;
+}
+
 
 .form-group .row .col-md-6 input {
 	box-shadow: none;
@@ -16,6 +22,9 @@ textarea#message {
 .form-group {
 	font-family: @bran_bold;
 	font-size: 16px;
+}
+.form-control:focus {
+	border-color: #2E3A5E;
 }
 
 .submit {
@@ -29,12 +38,10 @@ textarea#message {
 
 .btn-post-md {
 	.btn-post();
-	/*font-size: 16px;*/
 }
 
 form .btn {
 	margin-top: 30px;
-	/*padding: 1.5em 3.5em;*/
 	padding: 1.3em 4.3em;
 	font-family: @bran_bold ;
 }

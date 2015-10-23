@@ -12,7 +12,7 @@ get_header(); ?>
 
 	<div class="section section-history">
 		<div class="container">
-			<div class="section-holder">
+			<div id="history-subdesc"class="section-holder animated fadeIn">
 				<h2 class = "section-title">Yanko & Popovic</h2>
 				<div class="cline-15"></div>
 					<?php 
@@ -28,7 +28,7 @@ get_header(); ?>
 			<div class="history-content">
 				<div class="row">
 
-					<div class="history-content-holder left-slide">
+					<div id="what-we-do"class="history-content-holder animated fadeInLeft">
 						<div class="col-md-6">
 							<div class="history-desc">
 								<h2 class="section-title title-left">What We Do</h2>
@@ -53,7 +53,7 @@ get_header(); ?>
 						</div>
 					</div>
 
-					<div class="history-content-holder right-slide">
+					<div id="history"class="history-content-holder animated fadeInRight">
 						<div class="col-md-6">
 							<?php
 		            global $post;

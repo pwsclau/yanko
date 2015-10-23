@@ -13,11 +13,11 @@ if ( have_posts() ) : ?>
 
   <div class="section section-team">
     <div class="container">
-      <div class="section-title">
+      <div id="lawyer-content"class="section-title animated fadeIn">
         <h2>Meet The Team</h2>
         <div class="cline-15"></div>
       </div>
-      <div class="section-desc">
+      <div id="lawyer-content"class="section-desc animated fadeIn">
         <p>
           <?php 
             $content_post = get_post(8);
@@ -34,7 +34,7 @@ if ( have_posts() ) : ?>
           $cntr=0;
           while(have_posts()) : the_post(); ?>
             <div class="col-md-6 col-sm-12 col-xs-12">
-              <div class="lawyer-holder">
+              <div id="lawyer-holder" class="lawyer-holder animated fadeIn">
                 <div class="row">
                   <div class="col-md-7 col-sm-7 col-xs-12">
                     <div class="details-lawyer">

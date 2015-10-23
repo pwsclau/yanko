@@ -11,9 +11,9 @@ get_header(); ?>
 		</h1>
 	</div>
 	
-	<div class="section section-vismis">
+	<div class="section section-vismis ">
 		<div class="container">
-			<div class="section-holder">
+			<div id="vision" class="section-holder animated fadeInDown">
 				<h2 class = "section-title">Our Vision</h2>
 				<div class="cline-15"></div>
 				<?php 
@@ -25,7 +25,7 @@ get_header(); ?>
 		          echo $content;
 		        ?>
 			</div>
-			<div class="section-holder m10">
+			<div id="mission" class="section-holder m10 animated fadeInDown">
 				<div class="section-title">
 					<h2>Our Mission</h2>
 					<div class="cline-15"></div>

@@ -18,13 +18,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 
 	 <title>Yanko</title>
-
-	<!-- <meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"> -->
-	<!--[if lt IE 9]>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
-	<![endif]-->
 	<?php wp_head(); ?>
 </head>
 
@@ -40,9 +33,10 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand large" href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.jpg"></a>
-
-        <a href="index.php" class="navbar-brand mini"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-mini.png" alt=""></a>
+        <?php if(of_get_option('branding', '')){?>
+          <a class="navbar-brand large" href="/"><img src="<?php echo of_get_option('branding', '');  ?>"></a>
+        <?php } ?>
+        
       </div>
 
       <ul class ="nav navbar-nav navbar-right upper-nav">
@@ -61,8 +55,19 @@
               <input type="submit" class="search-submit" value="Search"> 
             </form>
         </li>
-        <li class="hide-li"><a href="#"><i class="fa fa-phone"></i>T: 403.262.0262</a></li>
-        <li class="hide-li"><a href="#"><i class="fa fa-fax"></i>F: 403.204.0284</a></li>
+
+        <?php if(of_get_option('telnumber', '')){?>
+          <li class="hide-li">
+            <a href="tel:<?php echo of_get_option('telnumber', '');  ?>" target="_blank">T: <?php echo of_get_option('telnumber', '');  ?></a>
+          </li>
+        <?php } ?>
+
+        <?php if(of_get_option('fax_number', '')){?>
+          <li class="hide-li">
+            <a href="tel:<?php echo of_get_option('fax_number', '');  ?>" target="_blank">F: <?php echo of_get_option('fax_number', '');  ?></a>
+          </li>
+        <?php } ?>
+
         </ul>
 
       <!-- Collect the nav links, forms, and other content for toggling -->

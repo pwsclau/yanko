@@ -62,11 +62,13 @@
                 <ul>
                   <li>
                     <i class="fa fa-envelope-o"></i>
+
                    <?php if(of_get_option('email', '')){?>
                       <span class="ml-10">
                         <a href="mailto:<?php echo of_get_option('email', '');  ?>" target="_blank"><?php echo of_get_option('email', '');  ?></a>
                       </span>
                     <?php } ?>
+
                   </li>
                   <li>
                     <ul class="contact-number-list">
@@ -76,39 +78,16 @@
                         <i class="fa fa-phone"></i>&nbsp;<a href="tel:<?php echo of_get_option('telephone', '');  ?>" target="_blank"><?php echo of_get_option('telephone', '');  ?></a>
                       </li>
                     <?php } ?>
+
                     <?php if(of_get_option('faxnumber', '')){?>
-                      <li>
+                      <li class="tele-link">
                         <a href="tel:<?php echo of_get_option('faxnumber', '');  ?>" target="_blank"><?php echo of_get_option('faxnumber', '');  ?></a>
                       </li>
                    <?php } ?>
+
                   </ul>
                   </li>
                 </ul>
-
-                <!-- <div class="mail">
-                  <i class="fa fa-envelope-o"></i>
-                   <?php if(of_get_option('email', '')){?>
-                      <span class="ml-10">
-                        <a href="mailto:<?php echo of_get_option('email', '');  ?>" target="_blank"><?php echo of_get_option('email', '');  ?></a>
-                      </span>
-                    <?php } ?>
-                </div> -->
-               <!--  <div class="tele">
-                  
-                  <ul class="contact-number-list">
-                    <i class="fa fa-phone"></i>
-                    <?php if(of_get_option('telephone', '')){?>
-                      <li>
-                        <a href="tel:<?php echo of_get_option('telephone', '');  ?>" target="_blank"><?php echo of_get_option('telephone', '');  ?></a>
-                      </li>
-                    <?php } ?>
-                    <?php if(of_get_option('faxnumber', '')){?>
-                      <li>
-                        <a href="tel:<?php echo of_get_option('faxnumber', '');  ?>" target="_blank"><?php echo of_get_option('faxnumber', '');  ?></a>
-                      </li>
-                   <?php } ?>
-                  </ul>
-                </div> -->
               </div>
             </div>
           </div>
@@ -127,7 +106,7 @@
                   <li>
                     <a href="<?php echo of_get_option('twitter', '');  ?>" target="_blank"><i class="fa fa-twitter sm-links gray-er"></i></a>
                   </li>
-                 <?php } ?>
+                <?php } ?>
                 <?php if(of_get_option('linkedin', '')){?>
                   <li>
                     <a href="<?php echo of_get_option('linkedin', '');  ?>" target="_blank"><i class="fa fa-linkedin-square sm-links gray-er"></i></a>

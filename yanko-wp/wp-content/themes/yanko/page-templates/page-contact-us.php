@@ -12,7 +12,7 @@ get_header(); ?>
 	</div>
 
 	<div class="section section-contact">
-		<div class="container">
+		<div id="contact-sec" class="container animated fadeIn">
 			<div class="row">
 					<div class="col-md-8 para-18">
 
@@ -47,11 +47,11 @@ get_header(); ?>
                 <?php } ?>
 							</li>
 							<li>
-								<i class="fa fa-phone"></i>
+								
 								<ul class="contact-number-list">
 									<?php if(of_get_option('telephone', '')){?>
                     <li>
-                      <a href="tel:<?php echo of_get_option('telephone', '');  ?>" target="_blank"><?php echo of_get_option('telephone', '');  ?></a>
+                      <i class="fa fa-phone"></i><a href="tel:<?php echo of_get_option('telephone', '');  ?>" target="_blank"> <?php echo of_get_option('telephone', '');  ?></a>
                     </li>
                   <?php } ?>
                   <?php if(of_get_option('faxnumber', '')){?>
