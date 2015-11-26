@@ -30,6 +30,7 @@
 		font-size: 17px;
 		color: @gray;
 	}
+
 	#single-practice {
 		-webkit-animation-duration: 3s;
 		-moz-osx-animation-duration: 3s;
@@ -38,24 +39,54 @@
 	  	-moz-osx-animation-delay: 1.5s;
 	  	animation-delay: 1.5s;
 	}
+	.list-bullet li{
+		list-style-type: disc;
+		margin-left: 2.5em;
+	}
+	.list-side-lawyers {
+		> li {
+			&:hover {
+				a { 
+					color: #373434;
+				}
+			}
+		}
+	}
+
 }
 
-
+.lawyer-wrapper {
+	padding-top: 5em;
+}
 .section-team {
-	padding: 4em 0;
-
+	padding: 5em 0;
+	
 	.section-desc p {
 		text-align: center;
 		padding: 0px 7em;
 	}
+	.contact-details {
+		a {
+			color: #696666 !important;
+		}
+	}
+	
+/*	.assistants-details {
+			a {
+				&:hover {
+					color: #fff;
+				}
+			}
+		}*/
 	.lawyer-holder	{
 		overflow: hidden;
-		height: 230px;
-		margin-top: 5em;
+		height: auto;
 		background-color: #404244;
+		margin-bottom: 3em;
+		max-width: 35em;
 
 		.details-lawyer {
-			padding: 30px;
+			padding: 1.5em 2em;
 		}
 
 		h3 {
@@ -125,10 +156,16 @@
 }
 
 .section-history {
-	padding: 5.5em 0 7.5em 0;
+	/*padding: 5.5em 0 7.5em 0;*/
+	padding-top: 5em;
+	padding-bottom: 2em;
+
 	.section-title {
 		margin-top: 0;
 		margin-bottom: 25px;
+	}
+	.section-holder {
+		margin-bottom: 4em;
 	}
 	.section-holder p {
 		padding-top: 35px;
@@ -136,13 +173,19 @@
 	.title-left {
 		text-align: left;
 	}
+	.title-right {
+		text-align: right;
+	}
 	.history-content {
 		margin: 0px 5em;
 	}
 	.history-content-holder {
-		margin-top: 8em;
+		margin-bottom: 4em;
+
 		p {
 			padding-top: 25px;
+			max-width: 45em;
+			margin: auto;
 		}
 	}
 	.hist-img-holder {
@@ -191,10 +234,10 @@
 	padding-bottom: 5em;
 	.section-title {
 		text-align: left;
-		
+		/*margin-bottom: 0;*/
 	}
 	.left-title {
-		padding-bottom: 3em;
+		/*padding-bottom: 3em;*/
 	}
 
 	li {
@@ -204,7 +247,7 @@
 	p {
 		padding-right: 5em;
 	}ul {
-		margin-top: 3em;
+		margin-top: 1.5em;
 	}
 	span {
 		margin-left: 1em;
@@ -242,8 +285,12 @@
 	}
 }
 .section-vismis {
-	padding-top: 3em !important;
+	/*padding-top: 3em !important;*/
+	padding-top: 3em;
 	padding-bottom: 5em;
+	.section-title {
+		margin-bottom: 0;
+	}
 	.section-holder {
 		padding-top: 1em;
 	}

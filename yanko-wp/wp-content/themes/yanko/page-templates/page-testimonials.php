@@ -48,5 +48,4 @@ if ( have_posts() ) : ?>
 			
 	</div>  
 <?php endif; wp_reset_query();?>
-<?php include ('post-section.php'); ?>
 <?php get_footer(); ?>

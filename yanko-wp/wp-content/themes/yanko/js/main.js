@@ -1,6 +1,8 @@
 (function($){
 
 	$(window).load(function() { // makes sure the whole site is loaded
+        $('.cline-12').addClass('is-triggered');
+        $('.cline-13').addClass('is-triggered');
         $('.cline-15').addClass('is-triggered');
         $('.cline-50').addClass('is-triggered');
     });

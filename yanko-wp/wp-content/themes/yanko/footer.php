@@ -17,7 +17,7 @@
 
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="footer-details">
-              <h4>AREAS OF PRACTICE</h4>
+              <h4>AREA OF PRACTICE</h4>
 
                <?php 
                   wp_nav_menu( array(
@@ -97,18 +97,18 @@
               <ul class = "sm-list">
 
                 <?php if(of_get_option('facebook', '')){?>
-                  <li>
+                  <li class="hvr-grow">
                     <a href="<?php echo of_get_option('facebook', '');  ?>" target="_blank"><i class="fa fa-facebook sm-links gray-er"></i></a>
                   </li>
                  <?php } ?>
                 
                 <?php if(of_get_option('twitter', '')){?>
-                  <li>
+                  <li class="hvr-grow">
                     <a href="<?php echo of_get_option('twitter', '');  ?>" target="_blank"><i class="fa fa-twitter sm-links gray-er"></i></a>
                   </li>
                 <?php } ?>
                 <?php if(of_get_option('linkedin', '')){?>
-                  <li>
+                  <li class="hvr-grow">
                     <a href="<?php echo of_get_option('linkedin', '');  ?>" target="_blank"><i class="fa fa-linkedin-square sm-links gray-er"></i></a>
                   </li>
                 <?php } ?>
@@ -128,14 +128,7 @@
     </div>
     <?php endwhile; ?>
   <?php endif; wp_reset_query(); ?>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-
 <?php wp_footer(); ?>
-
-
 
 </body>
 </html>

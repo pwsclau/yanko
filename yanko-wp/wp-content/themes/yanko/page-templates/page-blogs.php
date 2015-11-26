@@ -7,7 +7,7 @@ query_posts(array(
 ));
 if ( have_posts() ) :  ?>
 
-<div class="subpage-banner" style="background: url('<?php echo the_field('banner_img'); ?>') no-repeat; ">
+<div class="subpage-banner" style="background: url('<?php echo the_field('subbanner_image'); ?>') no-repeat; ">
 	<h1 class="heading-46 ">
 		Blogs
 	</h1>

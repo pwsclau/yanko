@@ -253,16 +253,16 @@ function twentyfifteen_scripts() {
 	wp_enqueue_script( 'twentyfifteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150330', true );
 
 	//YANKO START THEME
-	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/main.css');
 	wp_enqueue_style( 'fonts-css', get_template_directory_uri() . '/css/font-awesome.min.css');
 	wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/css/animate.min.css');
-	wp_enqueue_style( 'hover-buttons-css', get_template_directory_uri() . '/css/hover-buttons/hover-min.css');
+	wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/main.css');
+	// wp_enqueue_style( 'hover-buttons-css', get_template_directory_uri() . '/css/hover-buttons/hover-min.css');
+	wp_enqueue_style( 'hover-buttons-css', get_template_directory_uri() . '/css/hover-buttons/hover.css');
 
-	
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '5754745', true );
 	wp_enqueue_script( 'jquery-min', get_template_directory_uri() . '/js/jquery-1.11.3.min.js', array( 'jquery' ), '4657656', true );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '4657658', true );
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.custom.js', array( 'jquery' ), '5343634', true );
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '5754745', true );
 	wp_enqueue_script( 'viewportchecker', get_template_directory_uri() . '/js/viewportchecker.js', array( 'jquery' ), '5754747', true );
 
 	//YANKO END THEME
@@ -476,7 +476,7 @@ function custom_post_testimonials() {
   }
   add_action( 'init', 'custom_post_testimonials' );
 
-    ///////POST-TYPES TESTIMONIALS 
+    ///////POST-TYPES blogs 
 function custom_post_blogs() {
     $labels = array(
       'name'               => _x( 'Blogs', 'post type general name' ),

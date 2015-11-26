@@ -9,6 +9,7 @@
 @goth_bold: 'Gotham_bold';
 
 @btn-color: @darkblue;
+
 a:link {
 	text-decoration: none;
 }
@@ -34,6 +35,18 @@ ul li {
 
 	&.is-triggered {
 		.opacity(1);
+	}
+}
+.cline-12 {
+	.cline();
+	&.is-triggered {
+		width: 12em;
+	}
+}
+.cline-13 {
+	.cline();
+	&.is-triggered {
+		width: 13em;
 	}
 }
 .cline-15 {
@@ -62,11 +75,11 @@ ul li {
 .line-12-left {
 	border-bottom: 1px solid @darkblue;
 	width: 12em;
-	/*.line();*/
-
-	/*&.is-triggered {
-		width: 12em;
-	}*/
+}
+.line-12-right {
+	border-bottom: 1px solid @darkblue;
+	width: 12em;
+	float: right;
 }
 .line-16-left {
 	border-bottom: 1px solid @darkblue;
@@ -76,10 +89,11 @@ ul li {
 	border: 1px solid @darkblue;
 	width: 16em;
 }
+.line-8-5 {
+	border-bottom: 1px solid @darkblue;
+	width: 8.5em;
+}
 .line-20 {
-	/*border: 1px solid @darkblue;*/
-	/*width: 20em; */
-	/*width: 0;*/
 	.line();
 	&.is-triggered {
 		width: 20em;
@@ -134,4 +148,13 @@ img{
 }
 .m-t-1em {
 	margin-top: 1em
+}
+.skin-gray {
+	background-color: #f6f6f6;
+}
+.gap-20	{
+	height: 20px;
+}
+.gap-10 {
+	height: 10px;
 }

@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19076",
+"creatorBuild": "19102",
 "files": {
 	"\/index.php": {
 		"fileType": 8192,
@@ -4171,6 +4171,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/backup\/home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/backup\/home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -5903,6 +5912,82 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/plugins\/post-types-order\/css\/cpt.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/css\/cpt.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/post-types-order\/images\/menu-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3835,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/images\/menu-icon.png",
+		"outputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/images\/menu-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/plugins\/post-types-order\/include\/cpto-class.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/include\/cpto-class.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/post-types-order\/include\/functions.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/include\/functions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/post-types-order\/include\/options.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/include\/options.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/post-types-order\/include\/walkers.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/include\/walkers.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/post-types-order\/post-types-order.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/post-types-order.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/post-types-order\/screenshot-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 240152,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/screenshot-1.png",
+		"outputAbbreviatedPath": "\/wp-content\/plugins\/post-types-order\/screenshot-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -6429,6 +6514,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/yanko\/css\/main.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/yanko\/css\/main1.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/yanko\/css\/main1.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -9066,6 +9160,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/yanko\/page-templates\/page-forms.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/yanko\/page-templates\/page-forms.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/themes\/yanko\/page-templates\/page-history.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -9582,6 +9685,116 @@
 		"initialSize": 11850,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/brad.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/brad.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary-1024x683.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 266965,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-1024x683.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-1024x683.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary-150x100.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8303,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-150x100.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-150x100.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary-300x200.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27546,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-300x200.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-300x200.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary-825x510.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 170119,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-825x510.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-825x510.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.55281e+06,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary2-1024x576.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 166546,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2-1024x576.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2-1024x576.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary2-150x84.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5411,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2-150x84.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2-150x84.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary2-300x169.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17243,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2-300x169.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2-300x169.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary2-825x510.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113067,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2-825x510.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2-825x510.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 371490,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -10143,6 +10356,83 @@
 		"initialSize": 348137,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/welc-img.png",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/welc-img.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/11\/2014-104x150.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6412,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/2014-104x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/2014-104x150.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/11\/2014.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9039,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/2014.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/2014.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/11\/award-106x150.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21729,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/award-106x150.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/award-106x150.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/11\/award.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20070,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/award.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/award.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/11\/comsumer2014-150x93.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27389,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/comsumer2014-150x93.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/comsumer2014-150x93.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/11\/comsumer2014-300x186.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 93016,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/comsumer2014-300x186.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/comsumer2014-300x186.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/11\/comsumer2014.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 125591,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/comsumer2014.png",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/11\/comsumer2014.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -15274,8 +15564,16 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"no_plusplus": {
 			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"no_stand_alone_at": {
@@ -15284,6 +15582,10 @@
 			},
 		"no_tabs": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"no_throwing_strings": {

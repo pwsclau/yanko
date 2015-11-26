@@ -7,8 +7,8 @@ query_posts(array(
 'posts_per_page' => 10,
 ));
 if ( have_posts() ) : ?>
-  <div class="subpage-banner lawyers-subpg">
-    <h1 class ="heading-46">OUR ATTORNEYS</h1>
+  <div class="subpage-banner lawyers-subpg" style="background: #000 url('<?php echo the_field('subbanner_image'); ?>') no-repeat;">
+    <h1 class ="heading-46">OUR LAWYERS</h1>
   </div>
 
   <div class="section section-team">
@@ -29,36 +29,26 @@ if ( have_posts() ) : ?>
       </div>
 
       <div class="lawyer-wrapper">
-        <div class="row">
+       <div class="row">
           <?php
           $cntr=0;
           while(have_posts()) : the_post(); ?>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-              <div id="lawyer-holder" class="lawyer-holder animated fadeIn">
-                <div class="row">
-                  <div class="col-md-7 col-sm-7 col-xs-12">
-                    <div class="details-lawyer">
-                      <h3><?php the_title(); ?></h3>
-                        <h4>(<?php the_field('lawyer_title'); ?>)</h4>
-                        <p><?php $content = get_the_content(); 
-                                echo mb_strimwidth($content, 0, 100, '...');  ?></p>
-                        
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#<?php echo $cntr;?>">READ MORE</button>
-                    </div>
-                  </div>
-                  <div class="col-md-5 col-sm-5 col-xs-5">
-                  <?php
-                        global $post;
-                        $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full', false, '' );
-                        ?>
-                    <div class="img-lawyer-holder" style="background: url(<?php echo $src[0]; ?>) no-repeat; background-position: center 30% !important; max-width:100%;">
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+          <div id="lawyer-holder" class="lawyer-holder animated fadeIn">
+            <div class="details-lawyer">
+              <h3><?php the_title(); ?></h3>
+              <p><?php $content = get_the_content(); 
+                            echo mb_strimwidth($content, 0, 150, '...');  ?></p>
+               <button type="button" class="btn btn-default hvr-grow" data-toggle="modal" data-target="#<?php echo $cntr;?>">READ MORE</button>
             </div>
+          </div>
+        </div>
+
+
+
           <?php $cntr++; endwhile;?>
       </div>
+
       </div>
     </div>
   </div>
@@ -66,6 +56,7 @@ if ( have_posts() ) : ?>
   <?php
   $i=0;
   while(have_posts()) : the_post(); ?>
+
   <div class="modal fade" id="<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="lawyer-modal-label">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -78,43 +69,60 @@ if ( have_posts() ) : ?>
             </div>
 
             <h2 class="modal-title" id="lawyer-modal-label"><?php the_title(); ?></h2>
-            <h4>(Founder & Managing Partner)</h4>
-
-            <ul class="sm-list">
-              <li>
-                <a href="#"><i class="fa fa-facebook sm-links"></i></a>
+             
+            <ul class="contact-details">
+              <li >
+                <?php if( get_field('lawyer_email') ): ?>
+                  <span>Email:</span> <a href="mailto:<?php echo get_field('lawyer_email'); ?>"> <?php echo get_field('lawyer_email'); ?></a>
+                <?php endif; ?>
+                
               </li>
               <li>
-                <a href="#"><i class="fa fa-twitter sm-links"></i></a>
-                 
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-linkedin-square sm-links"></i></a>
-                </li>
+                <?php if( get_field('lawyer_phone_number') ): ?>
+                 <span>Phone:</span> <a href="tel:<?php echo get_field('lawyer_phone_number') ?>"><?php echo get_field('lawyer_phone_number') ?></a>
+                <?php endif; ?>
+
+                <?php if( get_field('lawyer_extension') ): ?>
+                  <span>Ext: <?php echo get_field('lawyer_extension') ?></span>
+                <?php endif; ?>
+                
+              </li>
             </ul>
           </div>
           <div class="modal-body">
               <?php the_content(); ?>
+
+              <?php if( get_field('assistants_lawyer') ): ?>
+                <h4 class="modal-subtitle">Assistants To Mr. <?php the_title(); ?></h4>
+                <div class="line-16-left"></div>
             
-        
-            <h4 class="modal-subtitle">Assistants To Mr. <?php the_title(); ?></h4>
-            <div class="line-16-left"></div>
-            
-            <ul class ="list-icon">
-              <?php 
-                if( have_rows('assistants_lawyer') ): 
-                  while( have_rows('assistants_lawyer') ): the_row();
-                  $name_assistants= get_sub_field('name_assistants');
-              ?>
-                  <li><?php echo $name_assistants ?></li>
-                <?php endwhile; ?>
+                <ul class ="list-icon list-assistants">
+                  <?php 
+                    if( have_rows('assistants_lawyer') ): 
+                      while( have_rows('assistants_lawyer') ): the_row();
+                      $name_assistant= get_sub_field('name_assistants');
+                      $email_assistant= get_sub_field('email_of_the_assistants');
+                      $ext_assistant= get_sub_field('extension_of_the_assistants');
+                  ?>
+                      <li>
+                        <?php echo $name_assistant ?>
+                        <div class="assistants-details">
+                           <span>Email:</span> <a href="mailto:<?php echo $email_assistant ?>"><?php echo $email_assistant ?></a>
+                           <br>
+                           <span>Ext: <?php echo $ext_assistant ?></span>
+                        </div>
+                      </li>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
+                </ul>
+
               <?php endif; ?>
-            </ul>
           </div>
+
+
         </div>
       </div>
     </div>
     <?php $i++; endwhile; ?>
   <?php endif; wp_reset_query();?>
-<?php include ('post-section.php'); ?>
 <?php get_footer(); ?>

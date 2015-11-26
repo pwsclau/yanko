@@ -4,7 +4,7 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
 
-	<div class="subpage-banner" style="background: #000 url('<?php echo the_field('banner_img'); ?>') no-repeat; ">
+	<div class="subpage-banner" style="background: #000 url('<?php echo the_field('subbanner_image'); ?>') no-repeat;">
 			<h1 class="heading-46 ">
 				OUR HISTORY
 			</h1>
@@ -26,8 +26,37 @@ get_header(); ?>
 			</div>
 
 			<div class="history-content">
-				<div class="row">
-
+				<div id="what-we-do" class="history-content-holder">
+					<div class="history-desc">
+						<h2 class="section-title">What We Do</h2>
+						<div class="cline-12"></div>
+							<?php 
+		            $my_postid = 61;
+		            $content_post = get_post($my_postid);
+		            $content = $content_post->post_content;
+		            $content = apply_filters('the_content', $content);
+		            $content = str_replace(']]>', ']]&gt;', $content);
+		            echo $content;
+		          ?>
+					</div>
+				</div>
+				
+					<div id="history" class="history-content-holder">
+						<div class="history-desc">
+							<h2 class="section-title">History</h2>
+						<div class="cline-12"></div>
+							<?php 
+		            $my_postid = 6;
+		            $content_post = get_post($my_postid);
+		            $content = $content_post->post_content;
+		            $content = apply_filters('the_content', $content);
+		            $content = str_replace(']]>', ']]&gt;', $content);
+		            echo $content;
+		          ?>
+						</div>
+					</div>
+					
+				<!-- <div class="row">
 					<div id="what-we-do"class="history-content-holder animated fadeInLeft">
 						<div class="col-md-6">
 							<div class="history-desc">
@@ -78,12 +107,12 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
+
 			</div>
 		</div>
 		</div>
-	</div>
+<!-- 	</div> -->
 	<?php endwhile; ?>
 <?php endif; wp_reset_query(); ?>
-<?php include ('post-section.php'); ?>
 <?php get_footer(); ?>

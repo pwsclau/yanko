@@ -4,7 +4,7 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
 
-	<div class="subpage-banner" style="background: #000 url('<?php echo the_field('banner_img'); ?>') no-repeat; ">
+	<div class="subpage-banner" style="background: #000 url('<?php echo the_field('subbanner_image'); ?>') no-repeat; ">
 		
 		<h1 class="heading-46 ">
 			CONTACT US
@@ -27,8 +27,11 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="col-md-4 para-16" >
-						<h2 class="section-title left">Contact Info</h2>
-						<div class="line-16"></div>
+						<div class="sectio-title left-title">
+							<h2 class="left">Contact Info</h2>
+							<div class="line-16"></div>
+						</div>
+						
 						<ul>
 							<li>
 								<i class="fa fa-map-marker"></i>
