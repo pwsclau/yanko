@@ -1,6 +1,6 @@
 .heading-46 {
 	font-family: @bran_reg;
-	font-size: 46px;
+	font-size: 64px;
 }
 .btn {
 	background-color: @btn-color;
@@ -58,16 +58,25 @@
 		max-width: 65em;
 	}
 }
-*/.section-desc {
-	max-width: 75em;
+*/
+.text-center {
 	text-align: center;
+}
+.section-desc {
+	max-width: 75em;
+	/*text-align: center;*/
 	margin: auto;
+	min-height: 22em;
+	position: relative;
 
 	.btn-about {
 		margin-top: 30px;
 		font-size: 15px;
 		font-family: @bran_bold;
 		padding: 1em 2.5em;
+		position: absolute;
+		bottom: 0;
+		left: 35%;
 		
 		&:hover, &:active, &:focus {
 			background-color: #a4aabc;
@@ -120,16 +129,67 @@
 		}
 	}
 }
-
-.headers-holder {
-	padding: 1em;
+.header-single-holder {
+    padding: 2em 3em;
 }
 
-.header-single-holder {
-/*	border-left: 1px solid #333;*/
+.headers-holder {
+	padding: 2em 1em;
+}
+
+.section-content {
+	position: relative;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .btn-center {
 	text-align: center;
 }
+.forms-wrapper {
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+ 	padding: 3em 0;
+}
+
+
+.forms {
+	> li {
+		> a {
+			color: #696666;
+			font-size: 20px;
+
+			&:hover {
+				color: darken(#696666, 15%);
+			}
+		}
+	}
+}
+.icon-header() {
+	padding: 15px;
+	font-size: 6em;
+	color: @darkblue;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.icon-scale, .icon-team, .icon-map-marker {
+	.icon-header();
+}	
+
+.yp-foyer-section {
+
+}
+
+.yp-foyer-img-holder {
+	max-width: 550px;
+	width: 100%;
+	margin-bottom: 3em;
+
+	img {
+		width: 100%;
+	}
+}
+
 

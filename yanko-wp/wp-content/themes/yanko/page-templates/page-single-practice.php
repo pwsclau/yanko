@@ -27,7 +27,7 @@ get_header(); ?>
 				<div class="col-md-4">
 					<div class="practice-lawyers">
 						<div class="section-title">
-							<h4>Practising Lawyers</h4>
+							<h4>Practicing Lawyers</h4>
 							<div class="line-16-left"></div>
 						</div>
 

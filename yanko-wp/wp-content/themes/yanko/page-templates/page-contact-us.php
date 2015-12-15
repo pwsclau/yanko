@@ -18,8 +18,16 @@ get_header(); ?>
 
 						<div class="section-title left-title">
 							<h2> <?php the_field('content_title'); ?> </h2>
-						<div class="line-16"></div>
+							<div class="line-16"></div>
 						</div>
+						
+						<div class="yp-foyer-section">
+							<div class="yp-foyer-img-holder">
+									<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(12), 'full' ); ?>" alt="">
+								</div>
+						</div>
+
+
 						<?php the_content(); ?>
 
 						<div class="form-wrapper">
@@ -70,7 +78,14 @@ get_header(); ?>
 				</div>
 		</div>
 	</div>
-	<iframe src="<?php echo get_field('google_map',12) ?>" width="100%" height="450"  frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	
+
+
+
+	<div class="container-fluid">
+		<iframe src="<?php echo get_field('google_map',12) ?>" width="100%" height="450"  frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
 	<?php endwhile; ?>
 <?php endif; wp_reset_query(); ?>
 <?php get_footer(); ?>

@@ -120,7 +120,7 @@
       
       <div class="copyright">
         <div class="container">
-          <p>&copy; COPYRIGHT 2013 YANKO & POPOVIC, BARRISTERS & SOLICITORS</p>
+          <p>&copy; COPYRIGHT 2016 YANKO & POPOVIC, BARRISTERS & SOLICITORS</p>
         </div>
         
       </div>

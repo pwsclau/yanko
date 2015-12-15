@@ -6570,75 +6570,24 @@ button.close {
     display: none !important;
   }
 }
-.banner-slider {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.banner .carousel-title {
-  font-family: 'Gotham_bold';
-  font-size: 72px;
-  text-transform: uppercase;
-  text-align: center;
-  -webkit-animation-delay: 1s;
-  -moz-osx-animation-delay: 1s;
-  animation-delay: 1s;
-}
-.banner .carousel-caption {
-  font-family: 'Brandon_reg';
+/*.banner-inner {
+	position: relative;
+	overflow: hidden;
+	height: 500px;
+	width: 100%;
+
+	background-size: cover!important;
+}*/
+.carousel-inner {
   position: relative;
-  bottom: initial;
-  left: 0;
-  width: 100%;
-  padding-top: 6em;
-}
-.banner .carousel-caption p {
-  color: #ffffff;
-}
-.banner .carousel-inner {
-  background-size: cover !important;
-}
-.banner .carousel-control {
-  width: 0;
-}
-.banner .carousel-indicators {
-  text-align: left;
-}
-.banner .image-holder {
-  position: relative;
-  left: 5em;
-  margin-top: 5em;
-}
-.banner .image-holder img {
-  width: 100%;
-  height: auto;
-}
-.banner .btn {
-  border: 2px solid #62666e;
-}
-.banner .btn-info {
-  margin-top: 3em;
-  background: none;
-  border-color: #ffffff;
-  font-family: 'Brandon_bld';
-  letter-spacing: 1px;
-  font-size: 15px;
-}
-.banner #banner-title,
-.banner #banner-desc {
-  -webkit-animation-duration: 2s;
-  -moz-osx-animation-duration: 2s;
-  animation-duration: 2s;
-}
-.banner-slider {
-  background-size: cover !important;
-  background-position: center 35% !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat;
+  background-size: cover!important;
+  background-position: center center !important;
+  min-height: 500px;
 }
 .subpage-banner {
   position: relative;
   width: 100%;
-  height: 275px;
+  height: 500px;
   background-size: cover!important;
   background-position: center 3% !important;
   background-attachment: fixed !important;
@@ -6940,8 +6889,8 @@ img{
 }
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon/icomoon.eot?1k6e4x');
-  src: url('../fonts/icomoon/icomoon.eot?1k6e4x#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?1k6e4x') format('truetype'), url('../fonts/icomoon/icomoon.woff?1k6e4x') format('woff'), url('../fonts/icomoon/icomoon.svg?1k6e4x#icomoon') format('svg');
+  src: url('../fonts/icomoon/icomoon.eot?z84nkx');
+  src: url('../fonts/icomoon/icomoon.eot?z84nkx#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?z84nkx') format('truetype'), url('../fonts/icomoon/icomoon.woff?z84nkx') format('woff'), url('../fonts/icomoon/icomoon.svg?z84nkx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -7365,26 +7314,6 @@ form .btn {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/*.glyphicon-att {
-	background-color: rgba(0, 0, 0, 0.71);
-	width: 80px!important;
-	height: 80px !important;
-	padding: 25px;
-}
-.glyphicon-chevron-left {
-	.glyphicon-att();
-	left: 0 !important;
-}
-.glyphicon-chevron-right {
-	.glyphicon-att();
-	right: 0 !important;
-}
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-	margin-right: 0px;
-}
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-	margin-left: 0px;
-}*/
 .icon-banner {
   font-family: 'icomoon';
   -webkit-font-smoothing: antialiased;
@@ -7440,29 +7369,44 @@ form .btn {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-left-dir:before {
-  content: "\e804";
+/*.icon-left-dir:before {
+	content: "\e804";
 }
 .icon-right-dir:before {
-  content: "\e805";
+	content: "\e805";
 }
 .icon-arrow-right:before {
-  content: "\e803";
+	content: "\e803";
 }
 .icon-search:before {
-  content: "\e800";
+	content: "\e800";
 }
 .icon-injured:before {
-  content: "\e600";
+	content: "\e600";
 }
 .icon-family:before {
-  content: "\e601";
+	content: "\e601";
 }
 .icon-scale:before {
-  content: "\e801";
+	content: "\e801";
 }
 .icon-court:before {
-  content: "\e802";
+	content: "\e802";
+}
+.icon-team:before {
+	content: "\e900";
+}*/
+.icon-map-marker:before {
+  content: "\e901";
+}
+.icon-team:before {
+  content: "\e900";
+}
+.icon-search:before {
+  content: "\e801";
+}
+.icon-scale:before {
+  content: "\e800";
 }
 .list-icon {
   padding-left: 20px;
@@ -7477,7 +7421,7 @@ form .btn {
   display: block;
 }
 .list-icon li:before {
-  content: "\e801";
+  content: "\e800";
   position: absolute;
   left: -25px;
   top: 2px;
@@ -7496,6 +7440,11 @@ form .btn {
 }
 .contact-details li a:hover {
   color: #000;
+}
+@media (max-width: 1680px) {
+  .section-desc .btn-about {
+    left: 30%!important;
+  }
 }
 @media (max-width: 1624px) {
   .banner .m-2 {
@@ -7536,6 +7485,22 @@ form .btn {
     display: none;
   }
 }
+@media (max-width: 1366px) {
+  .section-desc {
+    min-height: 26em!important;
+  }
+  /*	.section-desc .btn-about {
+		left: 25%!important;
+	}*/
+}
+@media (max-width: 1280px) {
+  .section-desc {
+    min-height: 28em!important;
+  }
+  .section-desc .btn-about {
+    left: 22%!important;
+  }
+}
 @media (max-width: 1199px) and (min-width: 1191px) {
   .section-areas .image-holder-prac {
     max-height: 260px;
@@ -7547,25 +7512,18 @@ form .btn {
   .section-aboutus .section-content {
     margin-bottom: 3em;
   }
+  .carousel-inner .item {
+    height: 400px;
+  }
+  .carousel-title {
+    font-size: 65px;
+    white-space: nowrap;
+  }
+  .carousel-control.right,
+  .carousel-control.left {
+    display: none;
+  }
 }
-/*@media (max-width: 1190px) {
-	.section-areas {
-		.image-holder-prac {
-			max-height: 255px !important;
-		}
-		.icon-bg {
-			width: 125px !important;
-			height: 125px !important;
-		}
-		.icon-family:before, .icon-court:before, .icon-injured:before {
-			font-size: 65px !important;
-		}
-		.overlay {
-			height: 3.75em;
-			padding: 0.5em;
-		}
-	}
-}*/
 @media (max-width: 1024px) {
   .search-form {
     top: -3 !important;
@@ -8667,7 +8625,7 @@ input[type="search"] {
 }
 .heading-46 {
   font-family: 'Brandon_reg';
-  font-size: 46px;
+  font-size: 64px;
 }
 .btn {
   background-color: #2e3a5e;
@@ -8723,16 +8681,24 @@ input[type="search"] {
 	}
 }
 */
+.text-center {
+  text-align: center;
+}
 .section-desc {
   max-width: 75em;
-  text-align: center;
+  /*text-align: center;*/
   margin: auto;
+  min-height: 22em;
+  position: relative;
 }
 .section-desc .btn-about {
   margin-top: 30px;
   font-size: 15px;
   font-family: 'Brandon_bld';
   padding: 1em 2.5em;
+  position: absolute;
+  bottom: 0;
+  left: 35%;
 }
 .section-desc .btn-about:hover,
 .section-desc .btn-about:active,
@@ -8783,14 +8749,48 @@ input[type="search"] {
 .section-areas .pi-image-holder img {
   width: 100%;
 }
-.headers-holder {
-  padding: 1em;
-}
 .header-single-holder {
-  /*	border-left: 1px solid #333;*/
+  padding: 2em 3em;
+}
+.headers-holder {
+  padding: 2em 1em;
+}
+.section-content {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .btn-center {
   text-align: center;
+}
+.forms-wrapper {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 3em 0;
+}
+.forms > li > a {
+  color: #696666;
+  font-size: 20px;
+}
+.forms > li > a:hover {
+  color: #424040;
+}
+.icon-scale,
+.icon-team,
+.icon-map-marker {
+  padding: 15px;
+  font-size: 6em;
+  color: #2e3a5e;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.yp-foyer-img-holder {
+  max-width: 550px;
+  width: 100%;
+  margin-bottom: 3em;
+}
+.yp-foyer-img-holder img {
+  width: 100%;
 }
 .section-practice {
   padding: 4em 0;

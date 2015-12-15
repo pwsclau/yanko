@@ -6692,6 +6692,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/yanko\/images\/carousel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.25217e+06,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/yanko\/images\/carousel.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/yanko\/images\/carousel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/yanko\/images\/contact-us-banner.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -8704,15 +8715,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/wp-content\/themes\/yanko\/less\/css\/blogs.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/yanko\/less\/css\/blogs.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/wp-content\/themes\/yanko\/less\/main.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -9711,6 +9713,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/uploads\/2015\/10\/calgary-150x62.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5122,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-150x62.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-150x62.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary-300x124.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16481,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-300x124.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-300x124.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2015\/10\/calgary-300x200.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -9722,6 +9746,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/uploads\/2015\/10\/calgary-825x414.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 121035,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-825x414.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-825x414.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2015\/10\/calgary-825x510.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -9729,6 +9764,17 @@
 		"initialSize": 170119,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-825x510.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary-825x510.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/calgary.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 90071,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary.jpeg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -9795,6 +9841,61 @@
 		"initialSize": 371490,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/calgary2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-1024x512.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 137233,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-1024x512.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-1024x512.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-150x75.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4740,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-150x75.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-150x75.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-300x150.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14559,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-300x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-300x150.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-825x510.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113544,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-825x510.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o-825x510.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.25217e+06,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/city-calgary-skyline-5383467-o.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -9960,6 +10061,61 @@
 		"initialSize": 225730,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/img-icon.png",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/img-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/IMG_6324-1024x768.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73724,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324-1024x768.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324-1024x768.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/IMG_6324-150x113.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3972,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324-150x113.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324-150x113.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/IMG_6324-300x225.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9819,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324-300x225.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324-300x225.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/IMG_6324-825x510.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42889,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324-825x510.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324-825x510.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2015\/10\/IMG_6324.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 972978,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2015\/10\/IMG_6324.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
