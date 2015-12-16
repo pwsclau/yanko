@@ -10,19 +10,19 @@ get_header(); ?>
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox" style ="background: url('<?php echo get_template_directory_uri() ?>/images/carousel.jpg');">
+  <div class="carousel-inner" role="listbox" style ="background: url(<?php the_field('banner_image'); ?>);">
     <div class="item active">
-      <div class="carousel-caption">
-        Yanko & Popovic
+      <div class="banner-tagline">
+        <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/banner-logo.png" alt="Logo"> -->
+        <h1>Yanko & Popovic</h1>
       </div>
     </div>
     <div class="item">
-      <div class="carousel-caption">
-        Personal Injury Lawyers in Calgary
+      <div class="banner-tagline">
+        <h1>Personal Injury Lawyers in Calgary</h1>
       </div>
     </div>
   </div>
